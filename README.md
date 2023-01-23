@@ -9,9 +9,9 @@ Planning functions of project :
 
 2. Automatic disposal and recycling of leftover food after a certain period of time 
 
-3. Statistics on the number of feedings and weight 
+3. Statistics on the number of feedings and weight  (time division, support arm)
 
-4. Monitoring function (camera, light sensor, lights)
+4. Monitoring function (camera, light sensor, lights，network element)
 
 5. Water feeding 
 
