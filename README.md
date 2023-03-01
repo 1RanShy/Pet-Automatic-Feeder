@@ -21,4 +21,4 @@ Next, let's introduce our fifth member Nana:
 
 ![63acb227ee42f7dae16dbdc9280ce7c](https://user-images.githubusercontent.com/123122528/214158524-02986317-cb96-4dc8-90a6-3feb8eb39e0c.jpg)
 
-APP development Github link：
+APP development Github link：https://github.com/Zexuan2815250/Pet-Automatic-Feeder-APP
