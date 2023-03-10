@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "thread": "cpp",
+        "cstdlib": "cpp",
+        "iostream": "cpp"
+    }
+}

@@ -19,8 +19,8 @@ void Mouse::ReadMouse() {
     }
     int left, middle, right;
     signed char x, y;
-    running = true;
-    while (running)
+    running = true;  //相当于 while 1 因为这个程序只执行5s,所以会有这个在stop函数中的更改
+    while (running) //while(1)
     {
 	    unsigned char data[3];
 	    int bytes = read(fd, data, sizeof(data));
@@ -51,6 +51,9 @@ void Mouse::start(){
 }
 
 void Mouse::stop(){
-	running = false;
+	running = false; //这个在我们的代码中不应该出现因为我们的代码中
+	//线程会一直执行,而不是只执行5s,然后就停止  while(running){} 这个是相当于我们的while(1)
 	t.join();
 }
+
+// 

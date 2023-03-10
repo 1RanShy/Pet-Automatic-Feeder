@@ -19,10 +19,10 @@ public:
 
 int main()
 {
-	MyMouseCallback callback;
-	Mouse mouse;
-	mouse.registerCallback(&callback);
-	mouse.start();
+	MyMouseCallback callback; // 这个是回调函数
+	Mouse mouse;	// 这个是真正的线程
+	mouse.registerCallback(&callback); // 线程注册回调函数
+	mouse.start(); // 线程开启时就声明了这个线程从哪个函数开始执行 // t = thread(&Mouse::ReadMouse,this);
 
 	cout << "Mouse Listening started." << endl;
 
@@ -32,3 +32,7 @@ int main()
 	cout << "Main thread finished." << endl;
 	return 0;
 }
+
+/*
+
+*/
