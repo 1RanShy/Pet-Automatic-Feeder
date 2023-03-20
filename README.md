@@ -17,7 +17,6 @@ Planning functions of project :
 5. Water feeding 
 ~~~
 
-Start
 
 Next, let's introduce our fifth member Nana:
 
