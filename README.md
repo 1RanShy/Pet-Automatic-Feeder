@@ -36,4 +36,9 @@ thread_3 :
 		Actions example: Pump works/Servo Engine works
 thread_4:
 	Bluetooth chip send data to the Phone
+thread_5:
+	The camera works.
+thread_6:
+	The weight sensor -> throw the pet food
+	Human sensor -> Stop the engine throwing food when cats are there.
 ~~~
