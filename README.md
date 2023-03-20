@@ -22,3 +22,16 @@ Next, let's introduce our fifth member Nana:
 ![63acb227ee42f7dae16dbdc9280ce7c](https://user-images.githubusercontent.com/123122528/214158524-02986317-cb96-4dc8-90a6-3feb8eb39e0c.jpg)
 
 APP development Github link：https://github.com/Zexuan2815250/Pet-Automatic-Feeder-APP
+
+# How many threads we use in this Project
+~~~text
+thread_1 :
+	SR04 -> no pet Food -> Servo Engine move to fill food
+thread_2 :
+	Press Button -> Pump start to fill water
+thread_3 : 
+	Bluetooth receive data -> Some actions were taken
+		Actions example: Pump works/Servo Engine works
+thread_4:
+	Bluetooth chip send data to the Phone
+~~~
