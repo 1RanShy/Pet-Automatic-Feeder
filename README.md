@@ -1,13 +1,4 @@
-<center><font color="#ff0000">Pet Automatic Feeder based on Raspberry Pi </font>
-</center>
-<center><font color="#00b0f0">Content Tables</font></center>
-[[#The Project Introduction]]
-	[[#The functions we want to realize]]
-	[[#The functions we really realize]]
-	
-[[#How many threads we use in this Project]]
-
-[[#The Device used in this Project]]
+<center>Pet Automatic Feeder based on Raspberry Pi </center>
 
 
 # The Project Introduction
@@ -69,4 +60,5 @@ Thread_6:
 We use servo motors to control a series of actions in the automatic feeding system, such as opening and closing the lid of the trash bin and dispensing cat food.
 
 The camera
+
 
