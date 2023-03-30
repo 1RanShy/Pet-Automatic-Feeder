@@ -1,4 +1,4 @@
-                                               Pet Automatic Feeder based on Raspberry Pi 
+                        Pet Automatic Feeder based on Raspberry Pi 
 
 
 # The Project Introduction
@@ -7,8 +7,7 @@ At present, pets are very common family members. But sometimes we have to go out
 
 So our idea is to design an automatic feeding machine, which can help people feed pets and understand the real-time status of pets when they are not at home and cannot take care of them. 
 
-~~~text
-Planning functions of project :
+## Planning functions of project :
 1. Timed and quantified automatic feeding (servo motor, weight sensor) 
 
 2. Automatic disposal and recycling of leftover food after a certain period of time 
@@ -18,7 +17,7 @@ Planning functions of project :
 4. Monitoring function (camera, light sensor, lights，network element)
 
 5. Water feeding 
-~~~
+
 
 
 Next, let's introduce our fifth member Nana:
