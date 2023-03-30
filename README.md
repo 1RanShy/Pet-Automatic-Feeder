@@ -1,4 +1,4 @@
-<center>Pet Automatic Feeder based on Raspberry Pi </center>
+                                               Pet Automatic Feeder based on Raspberry Pi 
 
 
 # The Project Introduction
