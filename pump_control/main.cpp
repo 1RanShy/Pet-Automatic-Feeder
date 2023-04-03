@@ -2,7 +2,7 @@
 
 int main()
 {
-    PumpControl pump(17, 5000); // 创建一个PumpControl对象，使用GPIO17和延迟时间5000微秒
+    PumpControl pump(17, 5000000); // 创建一个PumpControl对象，使用GPIO17和延迟时间5000微秒
     while (true)
     {
         pump.start(); // 启动水泵

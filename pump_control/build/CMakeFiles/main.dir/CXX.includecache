@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/pump_control.h
+pigpio.h
+-
+
+/home/shy/Desktop/Pet-Automatic-Feeder/pump_control/main.cpp
+pump_control.h
+/home/shy/Desktop/Pet-Automatic-Feeder/pump_control/pump_control.h
+
+/home/shy/Desktop/Pet-Automatic-Feeder/pump_control/src/pump_control.cpp
+pump_control.h
+/home/shy/Desktop/Pet-Automatic-Feeder/pump_control/src/pump_control.h
+

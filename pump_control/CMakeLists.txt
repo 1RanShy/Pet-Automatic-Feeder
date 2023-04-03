@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.10.0)
 
 project(main)# 工程名 
 
-find_library(WIRINGPI_LIBRARIES NAMES wiringPi)
+#find_library(WIRINGPI_LIBRARIES NAMES wiringPi)
 
 find_library(PIGPIO_LIBRARIES NAMES pigpio)
 
@@ -16,7 +16,7 @@ include_directories(include) #包含头文件目录
 
 add_executable(main "main.cpp" "../src/pump_control.cpp" )
 
-target_link_libraries(main ${WIRINGPI_LIBRARIES})
+#target_link_libraries(main ${WIRINGPI_LIBRARIES})
 
 target_link_libraries(main ${PIGPIO_LIBRARIES})
 
