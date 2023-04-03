@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main.dir/Blue.cpp.o -o main  -Wl,-rpath,/usr/local/lib /usr/local/lib/libpigpio.so 
