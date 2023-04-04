@@ -1,0 +1,3 @@
+/Users/ranshuai/Desktop/Thread/Thread_3/build/CMakeFiles/CMouse.dir
+/Users/ranshuai/Desktop/Thread/Thread_3/build/CMakeFiles/edit_cache.dir
+/Users/ranshuai/Desktop/Thread/Thread_3/build/CMakeFiles/rebuild_cache.dir
