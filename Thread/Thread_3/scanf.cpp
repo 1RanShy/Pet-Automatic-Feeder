@@ -4,8 +4,8 @@
 using namespace std;
 
 // 这个
-void Scan::scanKeyboard() {
-
+void Scan::scanKeyboard(int x) {
+	cout << "This is " << x << endl;
     printf("The scaf App has already run \n");
     running = true;
     while (running) //while(1)
@@ -35,7 +35,7 @@ void Scan::registerCallback(Scancallback* mc){
 }
 
 void Scan::start(){
-	t = thread(&Scan::scanKeyboard,this);
+	t = thread(&Scan::scanKeyboard,this,2);
 }
 
 void Scan::stop(){

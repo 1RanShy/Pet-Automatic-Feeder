@@ -35,7 +35,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/Platform/Darwin.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/Platform/UnixPaths.cmake"
-  "/Users/ranshuai/Desktop/Thread/Thread_3/CMakeLists.txt"
+  "/Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/CMakeLists.txt"
   "CMakeFiles/3.26.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.2/CMakeSystem.cmake"

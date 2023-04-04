@@ -1,3 +1,5 @@
+#ifndef CALLBACKS_H
+#define CALLBACKS_H
 #include "scanf.h"
 #include <iostream>
 using namespace std;
@@ -14,3 +16,5 @@ public:
         cout << "函数2测试"<< endl;
 	}
 };
+
+#endif

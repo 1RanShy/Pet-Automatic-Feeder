@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ranshuai/Desktop/Thread/Thread_3
+CMAKE_SOURCE_DIR = /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ranshuai/Desktop/Thread/Thread_3/build
+CMAKE_BINARY_DIR = /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CMouse.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/CMouse.dir/progress.make
 include CMakeFiles/CMouse.dir/flags.make
 
 CMakeFiles/CMouse.dir/scanf.cpp.o: CMakeFiles/CMouse.dir/flags.make
-CMakeFiles/CMouse.dir/scanf.cpp.o: /Users/ranshuai/Desktop/Thread/Thread_3/scanf.cpp
+CMakeFiles/CMouse.dir/scanf.cpp.o: /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/scanf.cpp
 CMakeFiles/CMouse.dir/scanf.cpp.o: CMakeFiles/CMouse.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ranshuai/Desktop/Thread/Thread_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CMouse.dir/scanf.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CMouse.dir/scanf.cpp.o -MF CMakeFiles/CMouse.dir/scanf.cpp.o.d -o CMakeFiles/CMouse.dir/scanf.cpp.o -c /Users/ranshuai/Desktop/Thread/Thread_3/scanf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CMouse.dir/scanf.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CMouse.dir/scanf.cpp.o -MF CMakeFiles/CMouse.dir/scanf.cpp.o.d -o CMakeFiles/CMouse.dir/scanf.cpp.o -c /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/scanf.cpp
 
 CMakeFiles/CMouse.dir/scanf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CMouse.dir/scanf.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ranshuai/Desktop/Thread/Thread_3/scanf.cpp > CMakeFiles/CMouse.dir/scanf.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/scanf.cpp > CMakeFiles/CMouse.dir/scanf.cpp.i
 
 CMakeFiles/CMouse.dir/scanf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CMouse.dir/scanf.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ranshuai/Desktop/Thread/Thread_3/scanf.cpp -o CMakeFiles/CMouse.dir/scanf.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/scanf.cpp -o CMakeFiles/CMouse.dir/scanf.cpp.s
 
 CMakeFiles/CMouse.dir/main.cpp.o: CMakeFiles/CMouse.dir/flags.make
-CMakeFiles/CMouse.dir/main.cpp.o: /Users/ranshuai/Desktop/Thread/Thread_3/main.cpp
+CMakeFiles/CMouse.dir/main.cpp.o: /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/main.cpp
 CMakeFiles/CMouse.dir/main.cpp.o: CMakeFiles/CMouse.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ranshuai/Desktop/Thread/Thread_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CMouse.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CMouse.dir/main.cpp.o -MF CMakeFiles/CMouse.dir/main.cpp.o.d -o CMakeFiles/CMouse.dir/main.cpp.o -c /Users/ranshuai/Desktop/Thread/Thread_3/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CMouse.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CMouse.dir/main.cpp.o -MF CMakeFiles/CMouse.dir/main.cpp.o.d -o CMakeFiles/CMouse.dir/main.cpp.o -c /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/main.cpp
 
 CMakeFiles/CMouse.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CMouse.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ranshuai/Desktop/Thread/Thread_3/main.cpp > CMakeFiles/CMouse.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/main.cpp > CMakeFiles/CMouse.dir/main.cpp.i
 
 CMakeFiles/CMouse.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CMouse.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ranshuai/Desktop/Thread/Thread_3/main.cpp -o CMakeFiles/CMouse.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/main.cpp -o CMakeFiles/CMouse.dir/main.cpp.s
 
 # Object files for target CMouse
 CMouse_OBJECTS = \
@@ -109,7 +109,7 @@ CMouse: CMakeFiles/CMouse.dir/scanf.cpp.o
 CMouse: CMakeFiles/CMouse.dir/main.cpp.o
 CMouse: CMakeFiles/CMouse.dir/build.make
 CMouse: CMakeFiles/CMouse.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ranshuai/Desktop/Thread/Thread_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CMouse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CMouse"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CMouse.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/CMouse.dir/clean:
 .PHONY : CMakeFiles/CMouse.dir/clean
 
 CMakeFiles/CMouse.dir/depend:
-	cd /Users/ranshuai/Desktop/Thread/Thread_3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ranshuai/Desktop/Thread/Thread_3 /Users/ranshuai/Desktop/Thread/Thread_3 /Users/ranshuai/Desktop/Thread/Thread_3/build /Users/ranshuai/Desktop/Thread/Thread_3/build /Users/ranshuai/Desktop/Thread/Thread_3/build/CMakeFiles/CMouse.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3 /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3 /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/build /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/build /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/build/CMakeFiles/CMouse.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CMouse.dir/depend
 

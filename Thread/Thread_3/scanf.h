@@ -1,3 +1,5 @@
+#ifndef SCANF_H
+#define SCANF_H
 
 #include <iostream>
 #include <thread>
@@ -18,10 +20,12 @@ private:
 	std::string c;
 	bool running;
 	std::thread t;
-	void scanKeyboard();
+	void scanKeyboard(int x);
 	std::vector<Scancallback*> scanCallbacks; // Vector<类型>标识符
 public:
 	void registerCallback(Scancallback* mc);
 	void start();
 	void stop();
 };
+
+#endif

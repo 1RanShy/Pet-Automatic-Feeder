@@ -1,6 +1,6 @@
 CMakeFiles/CMouse.dir/scanf.cpp.o: \
-  /Users/ranshuai/Desktop/Thread/Thread_3/scanf.cpp \
-  /Users/ranshuai/Desktop/Thread/Thread_3/scanf.h \
+  /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/scanf.cpp \
+  /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/scanf.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config_site \

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ranshuai/Desktop/Thread/Thread_3
+# Install script for directory: /Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ranshuai/Desktop/Thread/Thread_3/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ranshuai/Desktop/Pet_Upload/Pet-Automatic-Feeder/Thread/Thread_3/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
