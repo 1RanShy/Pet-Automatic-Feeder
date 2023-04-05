@@ -12,6 +12,8 @@ void Scan::scanKeyboard(int x) {
     {
         cout << "请输入一些内容：";
         getline(std::cin, c);
+		//每个回调函数必定有这个判断,符合就自动执行,不符合就不执行这个函数
+		//要是有别的条件需要触发这个回调函数,if里面的东西直接换成别的就行了
 	    if (c.size() > 0)  //这个只是处理字符串的回调函数,如果我想我还可以设置 处理其他任务的回调函数
 	    {
 			for(auto mc: scanCallbacks) {
@@ -19,7 +21,12 @@ void Scan::scanKeyboard(int x) {
 				mc->print2();
 			}
 	    }
-
+	    if (c == "12")  //这个只是处理字符串的回调函数,如果我想我还可以设置 处理其他任务的回调函数
+	    {
+			for(auto mc: scanCallbacks) {
+				mc->print2();
+			}
+	    }
 		// if (定时器的计时大于 1)  //这个只是处理字符串的回调函数,如果我想我还可以设置 处理其他任务的回调函数
 	    // {
 		// 	for(auto mc: scanCallbacks) {
