@@ -1,3 +1,0 @@
-C:/Users/RanShy/Desktop/Servo/build/CMakeFiles/main.dir
-C:/Users/RanShy/Desktop/Servo/build/CMakeFiles/edit_cache.dir
-C:/Users/RanShy/Desktop/Servo/build/CMakeFiles/rebuild_cache.dir
