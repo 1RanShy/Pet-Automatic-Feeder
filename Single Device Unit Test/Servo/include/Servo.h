@@ -5,6 +5,8 @@
 class Servo
 {
 private:
+    unsigned int pin;
 public:
-    void setAngle(int pin, int angle);
+    Servo(unsigned int pin);
+    void setAngle(unsigned int angle);
 };

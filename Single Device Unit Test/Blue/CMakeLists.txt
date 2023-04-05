@@ -16,7 +16,7 @@ include_directories(include) #包含头文件目录
 
 # file(GLOB SOURCE "src/*.cpp" "main.cpp")# 源文件下所有的 cpp文件 和主程序
 
-add_executable(main "Blue.cpp")
+add_executable(main "main.cpp" "../src/Blue.cpp")
 
 # target_link_libraries(main ${WIRINGPI_LIBRARIES})
 

@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shy/Desktop/Blue
+CMAKE_SOURCE_DIR = "/home/shy/Desktop/ranshuai/Single Device Unit Test/Blue"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shy/Desktop/Blue/build
+CMAKE_BINARY_DIR = "/home/shy/Desktop/ranshuai/Single Device Unit Test/Blue/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shy/Desktop/Blue/build/CMakeFiles /home/shy/Desktop/Blue/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/shy/Desktop/ranshuai/Single Device Unit Test/Blue/build/CMakeFiles" "/home/shy/Desktop/ranshuai/Single Device Unit Test/Blue/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shy/Desktop/Blue/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/shy/Desktop/ranshuai/Single Device Unit Test/Blue/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -142,32 +142,59 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-Blue.o: Blue.cpp.o
+main.o: main.cpp.o
 
-.PHONY : Blue.o
+.PHONY : main.o
 
 # target to build an object file
-Blue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Blue.cpp.o
-.PHONY : Blue.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-Blue.i: Blue.cpp.i
+main.i: main.cpp.i
 
-.PHONY : Blue.i
+.PHONY : main.i
 
 # target to preprocess a source file
-Blue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Blue.cpp.i
-.PHONY : Blue.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-Blue.s: Blue.cpp.s
+main.s: main.cpp.s
 
-.PHONY : Blue.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-Blue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Blue.cpp.s
-.PHONY : Blue.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+src/Blue.o: src/Blue.cpp.o
+
+.PHONY : src/Blue.o
+
+# target to build an object file
+src/Blue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Blue.cpp.o
+.PHONY : src/Blue.cpp.o
+
+src/Blue.i: src/Blue.cpp.i
+
+.PHONY : src/Blue.i
+
+# target to preprocess a source file
+src/Blue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Blue.cpp.i
+.PHONY : src/Blue.cpp.i
+
+src/Blue.s: src/Blue.cpp.s
+
+.PHONY : src/Blue.s
+
+# target to generate assembly for a file
+src/Blue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Blue.cpp.s
+.PHONY : src/Blue.cpp.s
 
 # Help Target
 help:
@@ -178,9 +205,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... Blue.o"
-	@echo "... Blue.i"
-	@echo "... Blue.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/Blue.o"
+	@echo "... src/Blue.i"
+	@echo "... src/Blue.s"
 .PHONY : help
 
 

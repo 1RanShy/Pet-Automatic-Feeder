@@ -44,11 +44,12 @@ int main()
     {
         cout << "PIGPIO is ready" << endl;
     }
-    Servo servo1;
+    
+    Servo servo1(17);
 
     while (1)
     {
-        servo1.setAngle(3, 0);
+        servo1.setAngle(0);
     }
 
     return 0;

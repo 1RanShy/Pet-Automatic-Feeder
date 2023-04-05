@@ -1,5 +1,34 @@
 # This is a demo about bluetooth
 
+
+# Example
+~~~c++
+#include<pigpio.h>
+#include<iostream>
+#include"./include/Blue.h"
+
+using namespace std;
+int main(void)
+{
+    Blue ble;
+    char buff[10] = {1, 2, 3, 4, 5};
+    while (1)
+    {
+        ble.readBytes(buff); // output character HEX/ASCII
+        ble.sendByte(buff[0]);
+        ble.writeBytes(buff, 5);
+    }
+    return 0;
+}
+~~~
+~~~cmake
+# cd build
+cmake ..
+make 
+sudo ./main
+~~~
+
+
 这个是串口协议，也是蓝牙芯片的使用demo
 ~~~text
 蓝牙收到一个数据
