@@ -2,19 +2,12 @@
 
 This is a demo which can works in raspberry pi
 
-# Resperripi
-This has been moved to resperipi. And can work properly.
-
-
-# Example
-
-# Attentions
 ~~~text
 1. include<pigpio.h>
 2. switch -----
 ~~~
 
-To cmake it in Windows
+To cmake it in respberry pi
 
 ~~~cmake
 # in build folder

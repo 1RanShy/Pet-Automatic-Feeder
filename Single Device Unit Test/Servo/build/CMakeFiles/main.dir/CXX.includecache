@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shy/Desktop/ranshuai/Single Device Unit Test/Servo/include/Servo.h
+pigpio.h
+-
+iostream
+-
+vector
+-
+
+/home/shy/Desktop/ranshuai/Single Device Unit Test/Servo/main.cpp
+pigpio.h
+-
+./include/Servo.h
+/home/shy/Desktop/ranshuai/Single Device Unit Test/Servo/include/Servo.h
+iostream
+-
+
+/home/shy/Desktop/ranshuai/Single Device Unit Test/Servo/src/Servo.cpp
+pigpio.h
+-
+../include/Servo.h
+/home/shy/Desktop/ranshuai/Single Device Unit Test/Servo/include/Servo.h
+iostream
+-
+
