@@ -1,3 +1,0 @@
-/home/shy/Desktop/Serial/build/CMakeFiles/rebuild_cache.dir
-/home/shy/Desktop/Serial/build/CMakeFiles/edit_cache.dir
-/home/shy/Desktop/Serial/build/CMakeFiles/main.dir

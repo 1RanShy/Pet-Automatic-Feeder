@@ -1,3 +1,0 @@
-/home/shy/Desktop/Blue/build/CMakeFiles/rebuild_cache.dir
-/home/shy/Desktop/Blue/build/CMakeFiles/edit_cache.dir
-/home/shy/Desktop/Blue/build/CMakeFiles/main.dir
