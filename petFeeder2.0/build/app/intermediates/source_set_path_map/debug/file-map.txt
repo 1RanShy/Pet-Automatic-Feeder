@@ -1,0 +1,14 @@
+com.rtep.petfeeder.app-jetified-window-java-1.0.0-beta04-0 C:\Users\ThinkPad\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\res
+com.rtep.petfeeder.app-core-1.6.0-1 C:\Users\ThinkPad\.gradle\caches\transforms-3\4ca28c4a71705f8a687c69dda140a277\transformed\core-1.6.0\res
+com.rtep.petfeeder.app-jetified-annotation-experimental-1.1.0-2 C:\Users\ThinkPad\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\res
+com.rtep.petfeeder.app-jetified-window-1.0.0-beta04-3 C:\Users\ThinkPad\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\res
+com.rtep.petfeeder.app-debug-4 F:\FlutterCode\petFeeder2.0\android\app\src\debug\res
+com.rtep.petfeeder.app-main-5 F:\FlutterCode\petFeeder2.0\android\app\src\main\res
+com.rtep.petfeeder.app-pngs-6 F:\FlutterCode\petFeeder2.0\build\app\generated\res\pngs\debug
+com.rtep.petfeeder.app-resValues-7 F:\FlutterCode\petFeeder2.0\build\app\generated\res\resValues\debug
+com.rtep.petfeeder.app-rs-8 F:\FlutterCode\petFeeder2.0\build\app\generated\res\rs\debug
+com.rtep.petfeeder.app-mergeDebugResources-9 F:\FlutterCode\petFeeder2.0\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.rtep.petfeeder.app-mergeDebugResources-10 F:\FlutterCode\petFeeder2.0\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.rtep.petfeeder.app-merged_res-11 F:\FlutterCode\petFeeder2.0\build\app\intermediates\merged_res\debug
+com.rtep.petfeeder.app-packaged_res-12 F:\FlutterCode\petFeeder2.0\build\flutter_blue\intermediates\packaged_res\debug
+com.rtep.petfeeder.app-packaged_res-13 F:\FlutterCode\petFeeder2.0\build\permission_handler_android\intermediates\packaged_res\debug
