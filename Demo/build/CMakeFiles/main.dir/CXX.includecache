@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shy/Desktop/Demo/include/SR04.h
+pigpio.h
+-
+
+/home/shy/Desktop/Demo/include/Servo.h
+pigpio.h
+-
+iostream
+-
+vector
+-
+
+/home/shy/Desktop/Demo/main.cpp
+pigpio.h
+-
+./include/Servo.h
+/home/shy/Desktop/Demo/include/Servo.h
+./include/SR04.h
+/home/shy/Desktop/Demo/include/SR04.h
+stdio.h
+-
+iostream
+-
+chrono
+-
+thread
+-
+

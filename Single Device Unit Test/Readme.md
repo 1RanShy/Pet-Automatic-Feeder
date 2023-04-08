@@ -10,3 +10,8 @@ This folder is used to store all the unit test files. This means that all the in
 6. - [ ] SR04
 7. - [ ] Weigher
 
+# Servo Test
+Pysical Pin 
+- [x] 38
+- [x] 40
+- [x] 36 

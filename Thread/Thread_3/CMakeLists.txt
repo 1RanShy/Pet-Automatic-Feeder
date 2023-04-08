@@ -13,5 +13,6 @@ set(CMAKE_CXX_STANDARD 11)
 ADD_EXECUTABLE(main "scanf.cpp" "main.cpp")
 
 target_link_libraries(main pthread)
+
 # cmake . -G "MinGW Makefiles"
 # mingw32-make
