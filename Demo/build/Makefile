@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shy/Desktop/Demo
+CMAKE_SOURCE_DIR = /home/shy/Desktop/ranshuai/Demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shy/Desktop/Demo/build
+CMAKE_BINARY_DIR = /home/shy/Desktop/ranshuai/Demo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shy/Desktop/Demo/build/CMakeFiles /home/shy/Desktop/Demo/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shy/Desktop/ranshuai/Demo/build/CMakeFiles /home/shy/Desktop/ranshuai/Demo/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shy/Desktop/Demo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shy/Desktop/ranshuai/Demo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -169,6 +169,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/AddFood.o: src/AddFood.cpp.o
+
+.PHONY : src/AddFood.o
+
+# target to build an object file
+src/AddFood.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/AddFood.cpp.o
+.PHONY : src/AddFood.cpp.o
+
+src/AddFood.i: src/AddFood.cpp.i
+
+.PHONY : src/AddFood.i
+
+# target to preprocess a source file
+src/AddFood.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/AddFood.cpp.i
+.PHONY : src/AddFood.cpp.i
+
+src/AddFood.s: src/AddFood.cpp.s
+
+.PHONY : src/AddFood.s
+
+# target to generate assembly for a file
+src/AddFood.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/AddFood.cpp.s
+.PHONY : src/AddFood.cpp.s
+
 src/SR04.o: src/SR04.cpp.o
 
 .PHONY : src/SR04.o
@@ -235,6 +262,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/AddFood.o"
+	@echo "... src/AddFood.i"
+	@echo "... src/AddFood.s"
 	@echo "... src/SR04.o"
 	@echo "... src/SR04.i"
 	@echo "... src/SR04.s"

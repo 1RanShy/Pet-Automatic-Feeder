@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shy/Desktop/Demo/main.cpp" "/home/shy/Desktop/Demo/build/CMakeFiles/main.dir/main.cpp.o"
-  "/home/shy/Desktop/Demo/src/SR04.cpp" "/home/shy/Desktop/Demo/build/CMakeFiles/main.dir/src/SR04.cpp.o"
-  "/home/shy/Desktop/Demo/src/Servo.cpp" "/home/shy/Desktop/Demo/build/CMakeFiles/main.dir/src/Servo.cpp.o"
+  "/home/shy/Desktop/ranshuai/Demo/main.cpp" "/home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/main.dir/main.cpp.o"
+  "/home/shy/Desktop/ranshuai/Demo/src/AddFood.cpp" "/home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/main.dir/src/AddFood.cpp.o"
+  "/home/shy/Desktop/ranshuai/Demo/src/SR04.cpp" "/home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/main.dir/src/SR04.cpp.o"
+  "/home/shy/Desktop/ranshuai/Demo/src/Servo.cpp" "/home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/main.dir/src/Servo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

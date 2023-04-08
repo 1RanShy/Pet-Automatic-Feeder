@@ -1,4 +1,4 @@
-# Install script for directory: /home/shy/Desktop/Demo
+# Install script for directory: /home/shy/Desktop/ranshuai/Demo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/shy/Desktop/Demo/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/shy/Desktop/ranshuai/Demo/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

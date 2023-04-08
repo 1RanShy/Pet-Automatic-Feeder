@@ -1,5 +1,5 @@
 #ifndef SR04_H
-#define SR04_Hsigned unsigned int
+#define SR04_H
 
 #include <pigpio.h>
 
