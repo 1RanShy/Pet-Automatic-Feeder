@@ -20,13 +20,13 @@ private:
     float distance;
     bool running;
 	std::thread t;
-	void scanFood();
+	void scanFood();//main programm to add or stop adding food
 	std::vector<AddFoodcallback*> addFoodCallbacks; // Vector<类型>标识符
 public:
 	void registerCallback(AddFoodcallback* af);
 	void start();
 	void stop();
-    // float getFoodLeft();
+
 };
 
 #endif
