@@ -6,19 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/SR04.h
-pigpio.h
--
-
-../include/Servo.h
-pigpio.h
--
-iostream
--
-vector
--
-
-/home/shy/Desktop/ranshuai/Demo/include/AddFood.h
+/home/shy/Desktop/Pet-Automatic-Feeder/Demo/include/AddFood.h
 pigpio.h
 -
 iostream
@@ -28,11 +16,11 @@ vector
 thread
 -
 
-/home/shy/Desktop/ranshuai/Demo/include/SR04.h
+/home/shy/Desktop/Pet-Automatic-Feeder/Demo/include/SR04.h
 pigpio.h
 -
 
-/home/shy/Desktop/ranshuai/Demo/include/Servo.h
+/home/shy/Desktop/Pet-Automatic-Feeder/Demo/include/Servo.h
 pigpio.h
 -
 iostream
@@ -40,15 +28,15 @@ iostream
 vector
 -
 
-/home/shy/Desktop/ranshuai/Demo/main.cpp
+/home/shy/Desktop/Pet-Automatic-Feeder/Demo/main.cpp
 pigpio.h
 -
 ./include/Servo.h
-/home/shy/Desktop/ranshuai/Demo/include/Servo.h
+/home/shy/Desktop/Pet-Automatic-Feeder/Demo/include/Servo.h
 ./include/SR04.h
-/home/shy/Desktop/ranshuai/Demo/include/SR04.h
+/home/shy/Desktop/Pet-Automatic-Feeder/Demo/include/SR04.h
 ./include/AddFood.h
-/home/shy/Desktop/ranshuai/Demo/include/AddFood.h
+/home/shy/Desktop/Pet-Automatic-Feeder/Demo/include/AddFood.h
 stdio.h
 -
 iostream
@@ -62,17 +50,5 @@ stdio.h
 unistd.h
 -
 fcntl.h
--
-
-/home/shy/Desktop/ranshuai/Demo/src/AddFood.cpp
-../include/AddFood.h
-/home/shy/Desktop/ranshuai/Demo/include/AddFood.h
-SR04.h
-/home/shy/Desktop/ranshuai/Demo/src/SR04.h
-Servo.h
-/home/shy/Desktop/ranshuai/Demo/src/Servo.h
-iostream
--
-thread
 -
 

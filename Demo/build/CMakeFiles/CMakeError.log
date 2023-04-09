@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_7b417/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b417.dir/build.make CMakeFiles/cmTC_7b417.dir/build
-gmake[1]: Entering directory '/home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7b417.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -o CMakeFiles/cmTC_7b417.dir/src.c.o -c /home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_7b417
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b417.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD CMakeFiles/cmTC_7b417.dir/src.c.o -o cmTC_7b417 
-/usr/bin/ld: CMakeFiles/cmTC_7b417.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/gmake cmTC_440f8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_440f8.dir/build.make CMakeFiles/cmTC_440f8.dir/build
+gmake[1]: Entering directory '/home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_440f8.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -o CMakeFiles/cmTC_440f8.dir/src.c.o -c /home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_440f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_440f8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD CMakeFiles/cmTC_440f8.dir/src.c.o -o cmTC_440f8 
+/usr/bin/ld: CMakeFiles/cmTC_440f8.dir/src.c.o: in function `main':
 src.c:(.text+0x40): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x4c): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x58): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x68): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_7b417.dir/build.make:106: cmTC_7b417] Error 1
-gmake[1]: Leaving directory '/home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:140: cmTC_7b417/fast] Error 2
+gmake[1]: *** [CMakeFiles/cmTC_440f8.dir/build.make:106: cmTC_440f8] Error 1
+gmake[1]: Leaving directory '/home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:140: cmTC_440f8/fast] Error 2
 
 
 Source file was:
@@ -41,20 +41,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_8dd5f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8dd5f.dir/build.make CMakeFiles/cmTC_8dd5f.dir/build
-gmake[1]: Entering directory '/home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8dd5f.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_8dd5f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
-Linking C executable cmTC_8dd5f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8dd5f.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_8dd5f.dir/CheckFunctionExists.c.o -o cmTC_8dd5f  -lpthreads 
+Run Build Command(s):/usr/bin/gmake cmTC_2e2ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2e2ce.dir/build.make CMakeFiles/cmTC_2e2ce.dir/build
+gmake[1]: Entering directory '/home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e2ce.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_2e2ce.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2e2ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e2ce.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_2e2ce.dir/CheckFunctionExists.c.o -o cmTC_2e2ce  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_8dd5f.dir/build.make:106: cmTC_8dd5f] Error 1
-gmake[1]: Leaving directory '/home/shy/Desktop/ranshuai/Demo/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:140: cmTC_8dd5f/fast] Error 2
+gmake[1]: *** [CMakeFiles/cmTC_2e2ce.dir/build.make:106: cmTC_2e2ce] Error 1
+gmake[1]: Leaving directory '/home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:140: cmTC_2e2ce/fast] Error 2
 
 
 
