@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/shy/Desktop/RanShuai/Single Device Unit Test/Blue/include"
+CXX_INCLUDES = -I"/home/ranshy/Desktop/RanShuai/Single Device Unit Test/Blue/include"
 
 CXX_FLAGS = 
 

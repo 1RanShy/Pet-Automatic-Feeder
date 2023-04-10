@@ -4,12 +4,13 @@
 
 class Blue{
 private:
-    unsigned int serialStatus;
-    char* name = "/dev/serial0"; //portname 14 15
+    int status;
+    char* name = "/dev/ttyS0"; //portname 14 15
 public:
     Blue();
+    ~Blue();
     void sendByte(unsigned char c);
-    void readByte();
+    void readByte(unsigned char *chara);
     void writeBytes(char *buff, unsigned char count);
     void readBytes(char *buff);
 };

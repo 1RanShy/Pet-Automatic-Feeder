@@ -7,25 +7,17 @@ int main(void)
 {
     Blue ble;
     char buff[10] = {'H', 'E', 'L', 'L', 'o'};
-    unsigned char x = 'H';
-    int  serialStatus = serOpen("/dev/serial0", 115200, 0);
+    unsigned char c = 'A';
     while (1)
     {
-        // ble.readBytes(buff); // output character HEX/ASCII
-        // ble.sendByte(x);
-        // ble.writeBytes(buff, 5);
-        // cout << x <<endl;
-        // ble.readByte();
-        
-        if (serDataAvailable(serialStatus)) // 先判断有没有数据读
-        {
-            cout << serReadByte(serialStatus) << endl;
-            while (serDataAvailable(serialStatus));
-            //     ; // 有数据读就读直到读完
-        }
-        // gpioDelay(200000);
-        // gpioDelay(1000000);
+        // sendByte(x, 'H');
+        // ble.readByte(&c);
+        // ble.sendByte('A');
         // ble.readBytes(buff);
+        // cout<< buff[0] << "   " << buff[1] << "  " << buff[2] << " " << buff[3] << buff[4] << endl; 
+        ble.writeBytes(buff, 5);
+        gpioDelay(500000);
+        
     }
     return 0;
 }
