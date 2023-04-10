@@ -27,3 +27,7 @@ trigger     23
 echo        24
 
 PWM_Food    16
+
+~~~text
+Bluetooth demo has worked properly. It takes me three days to fix it. Finally it works, but i still do not know why it can not work.
+~~~

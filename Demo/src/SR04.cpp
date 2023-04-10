@@ -23,7 +23,7 @@ SR04::~SR04() {
 
 float SR04::get_distance() {
     gpioWrite(trigger_pin_, PI_ON); // 开始发送超声波
-    usleep(10);
+    usleep(10); 
     gpioWrite(trigger_pin_, PI_OFF); // 发送结束
     unsigned int level = gpioRead(echo_pin_);
     while (level == PI_OFF) { // 等待echo信号上升沿
