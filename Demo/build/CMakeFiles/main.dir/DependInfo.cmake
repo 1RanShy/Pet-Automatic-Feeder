@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shy/Desktop/Pet-Automatic-Feeder/Demo/main.cpp" "/home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/main.dir/main.cpp.o"
-  "/home/shy/Desktop/Pet-Automatic-Feeder/Demo/src/AddFood.cpp" "/home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/main.dir/src/AddFood.cpp.o"
-  "/home/shy/Desktop/Pet-Automatic-Feeder/Demo/src/SR04.cpp" "/home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/main.dir/src/SR04.cpp.o"
-  "/home/shy/Desktop/Pet-Automatic-Feeder/Demo/src/Servo.cpp" "/home/shy/Desktop/Pet-Automatic-Feeder/Demo/build/CMakeFiles/main.dir/src/Servo.cpp.o"
+  "/home/shy/Desktop/RanShuai/Demo/main.cpp" "/home/shy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/main.cpp.o"
+  "/home/shy/Desktop/RanShuai/Demo/src/AddFood.cpp" "/home/shy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/AddFood.cpp.o"
+  "/home/shy/Desktop/RanShuai/Demo/src/SR04.cpp" "/home/shy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/SR04.cpp.o"
+  "/home/shy/Desktop/RanShuai/Demo/src/Servo.cpp" "/home/shy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/Servo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

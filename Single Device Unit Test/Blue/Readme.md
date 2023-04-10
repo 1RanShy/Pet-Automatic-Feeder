@@ -1,7 +1,16 @@
 # This is a demo about bluetooth
+If youn want to open the serial port in Respberry, youshould follow this website.
 
+And also open serial in Respberryy configure
+[How to open serial in Respberry](https://www.abelectronics.co.uk/kb/article/1035/serial-port-setup-in-raspberry-pi-os)
 
 # Example
+~~~text
+pigpio pin:
+tx 14
+rx 15
+~~~
+
 ~~~c++
 #include<pigpio.h>
 #include<iostream>

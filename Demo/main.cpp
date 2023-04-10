@@ -26,18 +26,17 @@ public:
 
 int main()
 {
+	gpioInitialise();
 	MyAddFoodCallback callback; // 这个是回调函数
 	AddFood addFood;	// 这个是真正的线程
 	addFood.registerCallback(&callback); // 线程注册回调函数
+	
 	addFood.start(); // 线程开启时就声明了这个线程从哪个函数开始执行 // t = thread(&scan::Readscan,this);
+	
 
-	cout << "scan Listening started." << endl;
-
-	sleep(10);
 
 	addFood.stop();
 	cout << "Main thread finished." << endl;
-    // while(1);
 	return 0;
 }
 

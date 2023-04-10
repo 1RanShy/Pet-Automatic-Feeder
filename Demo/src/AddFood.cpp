@@ -5,30 +5,37 @@
 #include <thread>
 using namespace std;
 
-// 这个
+/*
+	Automatically detect whether the food has decreased, and if so, refill the food
+	Detect frequency : 1 time/s
+*/
+void printx()
+{
+	SR04 test(23,24);
+	Servo add(16);
+	float x = test.get_distance();
+	cout << x << "cm" << endl;
+	if(x < 4)
+	{
+		add.setAngle(0);
+	}
+
+	if(x > 10)
+	{
+		add.setAngle(180);
+	}
+	cout << "already add" << endl;
+}
+
 void AddFood::scanFood() {
     running = true;
-    SR04 food(15, 14);
+	gpioSetTimerFunc(0, 1000, &printx);
     
     while (running) //while(1)
     {
-        cout << "Strat";
-        distance = food.get_distance();
-        if (distance < 6) //Using SR04 to detect remaining food.
-	    {
-			for(auto af: addFoodCallbacks) {
-                af->addFood();
-			}
-	    }
-        if (distance > 10)  
-	    {
-			for(auto af: addFoodCallbacks) {
-                af->stopAdd();
-			}
-	    }
+
     }
 }
-
 
 void AddFood::registerCallback(AddFoodcallback* af){
 	addFoodCallbacks.push_back(af);
