@@ -3,7 +3,7 @@
 
 ~~~text
 To do List
-[ ] SR04 Delete usleep(10) Then test
-[ ] Blue Thread
+[X] SR04 Delete usleep(10) Then test 试过了这个删了不行。
+[X] Blue Thread  明天写吧
 
 ~~~

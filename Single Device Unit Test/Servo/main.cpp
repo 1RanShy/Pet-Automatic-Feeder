@@ -9,7 +9,8 @@ int main()
 
     while (1)
     {
-        servo1.setAngle(45);
+        servo1.setAngle(180);
+
     }
 
     return 0;

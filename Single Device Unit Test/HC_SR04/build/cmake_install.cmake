@@ -1,4 +1,4 @@
-# Install script for directory: /home/shy/Desktop/ranshuai/Single Device Unit Test/HC_SR04
+# Install script for directory: /home/ranshy/Desktop/RanShuai/Single Device Unit Test/HC_SR04
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/shy/Desktop/ranshuai/Single Device Unit Test/HC_SR04/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ranshy/Desktop/RanShuai/Single Device Unit Test/HC_SR04/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

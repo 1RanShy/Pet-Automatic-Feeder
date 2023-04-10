@@ -10,19 +10,9 @@
 pigpio.h
 -
 
-/home/shy/Desktop/ranshuai/Single Device Unit Test/HC_SR04/main.cpp
-SR04.h
-/home/shy/Desktop/ranshuai/Single Device Unit Test/HC_SR04/SR04.h
+/home/ranshy/Desktop/RanShuai/Single Device Unit Test/HC_SR04/main.cpp
+../include/SR04.h
+/home/ranshy/Desktop/RanShuai/Single Device Unit Test/include/SR04.h
 stdio.h
--
-
-/home/shy/Desktop/ranshuai/Single Device Unit Test/HC_SR04/src/SR04.cpp
-SR04.h
-/home/shy/Desktop/ranshuai/Single Device Unit Test/HC_SR04/src/SR04.h
-stdio.h
--
-stdlib.h
--
-unistd.h
 -
 

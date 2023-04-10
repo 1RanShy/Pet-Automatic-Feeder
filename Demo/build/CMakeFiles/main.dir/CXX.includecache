@@ -58,11 +58,3 @@ unistd.h
 fcntl.h
 -
 
-/home/ranshy/Desktop/RanShuai/Demo/src/Blue.cpp
-pigpio.h
--
-iostream
--
-../include/Blue.h
-/home/ranshy/Desktop/RanShuai/Demo/include/Blue.h
-

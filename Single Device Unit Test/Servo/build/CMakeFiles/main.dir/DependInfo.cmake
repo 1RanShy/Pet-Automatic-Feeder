@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shy/Desktop/ranshuai/Single Device Unit Test/Servo/main.cpp" "/home/shy/Desktop/ranshuai/Single Device Unit Test/Servo/build/CMakeFiles/main.dir/main.cpp.o"
-  "/home/shy/Desktop/ranshuai/Single Device Unit Test/Servo/src/Servo.cpp" "/home/shy/Desktop/ranshuai/Single Device Unit Test/Servo/build/CMakeFiles/main.dir/src/Servo.cpp.o"
+  "/home/ranshy/Desktop/RanShuai/Single Device Unit Test/Servo/main.cpp" "/home/ranshy/Desktop/RanShuai/Single Device Unit Test/Servo/build/CMakeFiles/main.dir/main.cpp.o"
+  "/home/ranshy/Desktop/RanShuai/Single Device Unit Test/Servo/src/Servo.cpp" "/home/ranshy/Desktop/RanShuai/Single Device Unit Test/Servo/build/CMakeFiles/main.dir/src/Servo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
