@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/src/SR04.cpp.o CMakeFiles/main.dir/src/Servo.cpp.o CMakeFiles/main.dir/src/AddFood.cpp.o CMakeFiles/main.dir/src/Blue.cpp.o -o main  -Wl,-rpath,/usr/local/lib /usr/local/lib/libpigpio.so -lpthread 
+/usr/bin/c++ CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/src/SR04.cpp.o CMakeFiles/main.dir/src/Servo.cpp.o CMakeFiles/main.dir/src/AddFood.cpp.o CMakeFiles/main.dir/src/Blue.cpp.o CMakeFiles/main.dir/src/BlueSendReceive.cpp.o -o main  -Wl,-rpath,/usr/local/lib /usr/local/lib/libpigpio.so -lpthread 

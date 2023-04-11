@@ -223,6 +223,33 @@ src/Blue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Blue.cpp.s
 .PHONY : src/Blue.cpp.s
 
+src/BlueSendReceive.o: src/BlueSendReceive.cpp.o
+
+.PHONY : src/BlueSendReceive.o
+
+# target to build an object file
+src/BlueSendReceive.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/BlueSendReceive.cpp.o
+.PHONY : src/BlueSendReceive.cpp.o
+
+src/BlueSendReceive.i: src/BlueSendReceive.cpp.i
+
+.PHONY : src/BlueSendReceive.i
+
+# target to preprocess a source file
+src/BlueSendReceive.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/BlueSendReceive.cpp.i
+.PHONY : src/BlueSendReceive.cpp.i
+
+src/BlueSendReceive.s: src/BlueSendReceive.cpp.s
+
+.PHONY : src/BlueSendReceive.s
+
+# target to generate assembly for a file
+src/BlueSendReceive.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/BlueSendReceive.cpp.s
+.PHONY : src/BlueSendReceive.cpp.s
+
 src/SR04.o: src/SR04.cpp.o
 
 .PHONY : src/SR04.o
@@ -295,6 +322,9 @@ help:
 	@echo "... src/Blue.o"
 	@echo "... src/Blue.i"
 	@echo "... src/Blue.s"
+	@echo "... src/BlueSendReceive.o"
+	@echo "... src/BlueSendReceive.i"
+	@echo "... src/BlueSendReceive.s"
 	@echo "... src/SR04.o"
 	@echo "... src/SR04.i"
 	@echo "... src/SR04.s"

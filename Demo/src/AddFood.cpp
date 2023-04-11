@@ -1,6 +1,7 @@
-#include "../include/AddFood.h"
+#include "AddFood.h"
 #include "SR04.h"
 #include "Servo.h"
+#include "globalVar.h"
 #include <iostream>
 #include <thread>
 using namespace std;
@@ -8,8 +9,9 @@ using namespace std;
 /*
 	Automatically detect whether the food has decreased, and if so, refill the food
 	Detect frequency : 1 time/s
+	The timer will call this function.
 */
-void printx()
+void timerCallback1()
 {
 	SR04 test(23,24);
 	Servo add(16);
@@ -29,7 +31,7 @@ void printx()
 
 void AddFood::scanFood() {
     running = true;
-	gpioSetTimerFunc(0, 1000, &printx);
+	gpioSetTimerFunc(0, 1000, &timerCallback1);//1s callback
     
     while (running) //while(1)
     {

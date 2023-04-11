@@ -10,7 +10,7 @@ public:
     Blue();
     ~Blue();
     void sendByte(unsigned char c);
-    void readByte(unsigned char *chara);
+    void readByte(char *chara);
     void writeBytes(char *buff, unsigned char count);
     void readBytes(char *buff);
 };
