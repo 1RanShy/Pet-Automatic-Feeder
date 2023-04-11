@@ -1,0 +1,4 @@
+#Mon Mar 27 10:44:25 BST 2023
+base.0=F\:\\FlutterCode\\petFeeder3.0\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
