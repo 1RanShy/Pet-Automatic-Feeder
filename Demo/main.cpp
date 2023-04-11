@@ -94,12 +94,14 @@ public:
                 datsToSendLock.unlock();
             }
 
+            dataReceivedLock.lock();
             for(int i = 0; i<5; i++)
             {
                 // cout << dataReceived[i];
                 // cout << endl;
                 dataReceived[i] = 'z';
             }
+            dataReceivedLock.unlock();
         }
     }
 };

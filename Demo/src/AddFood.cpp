@@ -35,13 +35,13 @@ void timerCallback1()
 	}
 
 #ifdef TEST
-	cout << "already add" << endl;
-	datsToSendLock.lock();
-    dataToSend[0] = 'C';
-    dataToSend[1] = 'C';
-    dataToSend[2] = 'C';
-    dataToSend[3] = 'C';
-    dataToSend[4] = 99;
+	// cout << "already add" << endl;
+	// datsToSendLock.lock();
+    // dataToSend[0] = 'C';
+    // dataToSend[1] = 'C';
+    // dataToSend[2] = 'C';
+    // dataToSend[3] = 'C';
+    // dataToSend[4] = 99;
     datsToSendLock.unlock();
 #endif
 }
