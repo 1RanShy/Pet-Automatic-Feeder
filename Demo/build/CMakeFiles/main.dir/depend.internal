@@ -19,6 +19,7 @@ CMakeFiles/main.dir/src/Blue.cpp.o
  ../include/globalVar.h
  /home/ranshy/Desktop/RanShuai/Demo/src/Blue.cpp
 CMakeFiles/main.dir/src/BlueSendReceive.cpp.o
+ ../include/Blue.h
  ../include/BlueSendReceive.h
  ../include/globalVar.h
  /home/ranshy/Desktop/RanShuai/Demo/src/BlueSendReceive.cpp
