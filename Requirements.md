@@ -7,13 +7,48 @@ To do List
 [X] Blue Thread  明天写吧
 [x] 测试一下改为vector行不行
 没必要改，因为pigpio库里就要求是char * 可以在 buff改变之后再用vector改变。
-[ ] 蓝牙接收 蓝牙传输命令
+[x] 蓝牙接收 蓝牙传输命令
 [ ] 开启和关闭自动喂食模式
 [ ] 能传给手机什么信息？
 1. 猫咪正在进食
 
 
 蓝牙传输信息
-[ ] 发送基本上解决
-[ ] 接收还有问题
+[X] 发送基本上解决
+[X] 接收还有问题 
+
+
+~~~
+
+～～～text
+自动喂食的开关写好了，现在需要 
+
+蓝牙协议：
+自动喂食
+CAAAC：切换自动还是手动喂食
+11111：自动喂食状态
+00000：手动喂食状态
+通过判断 autoAddFoodFlag：来改变dataTosend的值
+
+发送完毕 dataToSend 全改为R
+dataRerceived 使用完毕 全改为z
+～～～
+
+
+
+~~~text
+To do List:
+
+[X] SR04: Delete usleep(10) then test. Tried it, deleting it doesn't work.
+[X] Blue Thread: Write it tomorrow.
+[x] Test if changing to vector works. No need to change it because the pigpio library requires it to be a char *, and it can be changed to a vector after buff is changed.
+
+[ ] Bluetooth receiving and transmitting commands.
+[ ] Enable and disable automatic feeding mode.
+[ ] What information can be sent to the phone?
+
+Cat is currently eating.
+Bluetooth transmission information:
+[X] Sending is basically resolved.
+[X] Receiving still has issues.
 ~~~

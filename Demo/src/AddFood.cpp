@@ -13,20 +13,37 @@ using namespace std;
 */
 void timerCallback1()
 {
-	SR04 test(23,24);
-	Servo add(16);
-	float x = test.get_distance();
-	cout << x << "cm" << endl;
-	if(x < 4)
+	if(autoAddFoodFlag == 1)
 	{
-		add.setAngle(0);
+		SR04 test(23,24);
+		Servo add(16);
+		float x = test.get_distance();
+		cout << x << "cm" << endl;
+		if(x < 4)
+		{
+			add.setAngle(0);
+		}
+
+		if(x > 10)
+		{
+			add.setAngle(180);
+		}
+	}
+	else
+	{
+		cout << "Manully add Food" << endl;
 	}
 
-	if(x > 10)
-	{
-		add.setAngle(180);
-	}
+#ifdef TEST
 	cout << "already add" << endl;
+	datsToSendLock.lock();
+    dataToSend[0] = 'C';
+    dataToSend[1] = 'C';
+    dataToSend[2] = 'C';
+    dataToSend[3] = 'C';
+    dataToSend[4] = 99;
+    datsToSendLock.unlock();
+#endif
 }
 
 void AddFood::scanFood() {

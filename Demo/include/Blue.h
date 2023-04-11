@@ -13,6 +13,7 @@ public:
     void readByte(char *chara);
     void writeBytes(char *buff, unsigned char count);
     void readBytes(char *buff);
+    int getStatus();
 };
 
 #endif

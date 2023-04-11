@@ -9,8 +9,9 @@
 // class默认 private继承
 struct BlueToothcallback {
 public:
-	virtual void sendData() = 0; //纯虚函数 必须在类中声明 
-    virtual void receiveData() = 0;
+	virtual void sendData(Blue *ble) = 0; //纯虚函数 必须在类中声明 
+    virtual void receiveData(Blue *ble) = 0;
+	virtual void dataProcess() = 0; //data process
 };
 
 
@@ -24,6 +25,7 @@ public:
 	void registerCallback(BlueToothcallback* blue);
 	void start();
 	void stop();
+    ~BLEDataProcessing();
 
 };
 

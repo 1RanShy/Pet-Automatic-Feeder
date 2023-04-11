@@ -10,11 +10,15 @@ Blue::Blue()
 {
     if (gpioInitialise() < 0)
     {
-        // cout << "Failed" << endl;
+        #ifdef TEST
+        // cout << "Failed" << endl;Blue *ble
+        #endif
     }
     else
     {
+        #ifdef TEST
         // cout << "PIGPIO is ready" << endl;
+        #endif
     }
 
     //initialise the serial GPIO14 15
@@ -23,11 +27,15 @@ Blue::Blue()
 
     if (status < 0)
     {
+        #ifdef TEST
         // cout << "Fail to open Serial port." << endl;
+        #endif
     }
     else
     {
+        #ifdef TEST
         // cout << "Success to Open" << endl;
+        #endif
     }
 }
 
@@ -72,13 +80,20 @@ void Blue::writeBytes(char *buff, unsigned char count)
 void Blue::readBytes(char *buff)
 {
     int count = serDataAvailable(status);
+    // cout << "count ====== " << count <<endl;
+    // cout << "Out CHAr" << endl;
     if (count)
     {
+        cout << "inside" << endl;
         serRead(status, buff, count);
         while (serDataAvailable(status))
             ; // until finish reading all data
-        cout << buff[0] << endl;
+        // cout << buff[0] << endl;
     }
 }
 
 
+int Blue ::getStatus()
+{
+    return status;
+}
