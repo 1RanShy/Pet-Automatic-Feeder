@@ -4,6 +4,25 @@
             "outputFile": "com.rtep.petfeeder.app-mergeDebugResources-9:/values/values.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\ThinkPad\\Desktop\\Pet-Automatic-Feeder\\petFeeder3.0\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,832",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "483,998"
+                    },
+                    "to": {
+                        "startLines": "93,97",
+                        "startColumns": "4,4",
+                        "startOffsets": "5462,5643",
+                        "endLines": "96,99",
+                        "endColumns": "12,12",
+                        "endOffsets": "5638,5807"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ThinkPad\\.gradle\\caches\\transforms-3\\dee59bb480020f42d53c2ea15e4501f7\\transformed\\jetified-window-1.0.0-beta04\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,19,23,34,51",
@@ -20,25 +39,6 @@
                         "endLines": "7,8,9,10,72,118,122,236,248,256",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "289,349,401,446,4387,6899,7030,10987,11427,11736"
-                    }
-                },
-                {
-                    "source": "F:\\FlutterCode\\petFeeder3.0\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "176,832",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "483,998"
-                    },
-                    "to": {
-                        "startLines": "93,97",
-                        "startColumns": "4,4",
-                        "startOffsets": "5462,5643",
-                        "endLines": "96,99",
-                        "endColumns": "12,12",
-                        "endOffsets": "5638,5807"
                     }
                 },
                 {

@@ -134,9 +134,51 @@ class _ConnectPageState extends State<ConnectPage> {
       // trailing: Icon(Icons.account_circle, color: Colors.white),
         ),
       ),
-      body: Column(
-        children: [
-          Container(
+      body: Column(children: [
+        Container(
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+          padding: EdgeInsets.fromLTRB(0, 25, 0, 25),
+          // color: Colors.white,
+          height: 110,
+          width: MediaQuery.of(context).size.width,
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.white,
+                // offset: Offset(5, 5),
+              ),
+            ],
+          ),
+          child: GridView(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 1,
+              mainAxisSpacing: 1,
+              crossAxisSpacing: 1,
+              childAspectRatio: 1 / 0.1,
+            ),
+            children: [
+              IconButton (
+                icon: Icon(Icons.pan_tool, color: Colors.orange,),
+                iconSize: 56,
+                onPressed: () async {
+                  setState(() {
+                    this.sendString = "CAAAC";
+                  });
+                  print(sendString);
+                  final command = this.sendString;
+                  final convertedCommand = AsciiEncoder().convert(command);
+
+                  // await this.mCharacteristics.write([97, 98]);
+                  await this.mCharacteristicWrite.write(convertedCommand);
+                }
+              ),
+            ]
+          ),
+        ),
+
+        Container(
             alignment: Alignment.topLeft,
             margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
             padding: EdgeInsets.fromLTRB(0, 25, 0, 25),
