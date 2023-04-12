@@ -7,8 +7,9 @@ int main(void)
 {   
     while (1)
     {
-        HumanSensor Sensor1(14);
+        HumanSensor Sensor1(1);
         Sensor1.detect();
+        gpioDelay(1000000);
     }
     
     return 0;

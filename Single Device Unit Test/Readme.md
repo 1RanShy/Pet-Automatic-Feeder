@@ -8,26 +8,18 @@ This folder is used to store all the unit test files. This means that all the in
 4. - [x] Human Sensor
 5. - [x] Pump driver
 6. - [x] SR04
-7. - [ ] Weigher  can not done
+7. - [ ] Weigher  :can not done
 
-# Servo Test
-Pysical Pin 
-- [x] 38
-- [x] 40
-- [x] 36 
 
-- [x] Blue 蓝牙协议没有初始化 txd rxd端口 
+# Some Problems I met
 
-# Pin 
-            Pigpio Pysical
-TXD         14      8
-RXD         15      10
-
-trigger     23
-echo        24
-
-PWM_Food    16
-
+## Bluetooth Chip
 ~~~text
-Bluetooth demo has worked properly. It takes me three days to fix it. Finally it works, but i still do not know why it can not work.
+Bluetooth demo has worked properly. It takes me three days to fix it. Finally it works, but i still do not know why it can not work. Maybe just because the Serial Port is with different name
+~~~
+
+## Pump Driver
+~~~text
+
+
 ~~~

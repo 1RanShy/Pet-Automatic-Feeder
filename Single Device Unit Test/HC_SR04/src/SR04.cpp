@@ -13,12 +13,10 @@ SR04::SR04(unsigned int trigger_pin, unsigned int echo_pin) :
     gpioSetMode(trigger_pin_, PI_OUTPUT);
     gpioSetMode(echo_pin_, PI_INPUT);
     gpioWrite(trigger_pin_, PI_OFF);
-    // usleep(200000); // wait 200ms initialse the sensor, this must be done by sleep
-    // gpioDelay(20000);
 }
 
 SR04::~SR04() {
-    gpioTerminate();
+    // gpioTerminate();
 }
 
 float SR04::get_distance() {

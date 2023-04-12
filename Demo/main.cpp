@@ -97,12 +97,13 @@ public:
             }
 
             //收到数据之后清除这个数据
+            //全部改为 zzzzz
             dataReceivedLock.lock();
             for(int i = 0; i<5; i++)
             {
                 // cout << dataReceived[i];
                 // cout << endl;
-                dataReceived[i] = 'z';
+                dataReceived[i] = 'Z';
             }
             dataReceivedLock.unlock();
         }

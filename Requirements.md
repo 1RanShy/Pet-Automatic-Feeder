@@ -17,10 +17,10 @@ To do List
 [X] 发送基本上解决
 [X] 接收还有问题 
 
-
 ~~~
 
-～～～text
+
+~~~text
 自动喂食的开关写好了，现在需要 
 
 蓝牙协议：
@@ -32,7 +32,53 @@ CAAAC：切换自动还是手动喂食
 
 发送完毕 dataToSend 全改为R
 dataRerceived 使用完毕 全改为z
-～～～
+
+命令格式是：
+CXXXC 头尾两个C表示这个确实是有效命令
+XXX是用来判断这一段命令到底是什么操作的标识符
+R和Z不要在自定义命令中出现
+~~~
+
+
+
+
+
+## 待做
+~~~text
+[x] 测试 改 水泵
+[x] 该电路图 水泵现在是 tx边 倒数第二个 把它改成别的引脚 倒数三个留给servo engine
+[x] 水泵和SR04的联合调试
+~~~
+
+# 待添加的功能
+~~~text
+[ ] 手动更改最大能够加到多大的深度
+[ ] 确定一下 食物少时候的多级的转向是大还是小
+[ ] 如何让树莓派开机自启动 main程序
+~~~
+
+
+
+
+# Pin 
+~~~text
+            Pigpio Pysical
+TXD         14      8
+RXD         15      10
+
+trigger     23
+echo        24
+
+PWM_Food    16 倒数第三个
+
+human sensor的往前 28 py
+pump  28 py
+~~~
+~~~text
+Bluetooth demo has worked properly. It takes me three days to fix it. Finally it works, but i still do not know why it can not work.
+~~~
+
+
 
 
 

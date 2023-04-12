@@ -1,6 +1,6 @@
 #include <pigpio.h>
 #include <iostream>
-#include "../include/HumanSensor.h"
+#include "HumanSensor.h"
 using namespace std;
 
 HumanSensor::HumanSensor(unsigned int gpio_pin)

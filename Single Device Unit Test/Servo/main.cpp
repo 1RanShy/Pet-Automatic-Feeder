@@ -10,7 +10,9 @@ int main()
     while (1)
     {
         servo1.setAngle(180);
-
+        gpioDelay(1000000);
+        servo1.setAngle(0);
+        gpioDelay(1000000);
     }
 
     return 0;

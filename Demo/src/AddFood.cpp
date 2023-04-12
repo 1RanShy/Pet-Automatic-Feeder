@@ -65,6 +65,6 @@ void AddFood::start(){
 }
 
 void AddFood::stop(){
-	running = false;
+	// running = false;
 	t.join();
 }

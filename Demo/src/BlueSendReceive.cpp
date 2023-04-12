@@ -40,7 +40,7 @@ void BLEDataProcessing::DataProcessing() {
 			}            
 	    }
 
-		if (dataReceived[0] != 'z' && dataReceived[4] != 'z') //这个只是处理字符串的回调函数,如果我想我还可以设置 处理其他任务的回调函数
+		if (dataReceived[0] != 'Z' && dataReceived[4] != 'Z') //这个只是处理字符串的回调函数,如果我想我还可以设置 处理其他任务的回调函数
 	    {
 			for(auto blue: bluetoothCallbacks) 
 			{
@@ -59,6 +59,6 @@ void BLEDataProcessing::start(){
 }
 
 void BLEDataProcessing::stop(){
-	running = false;
+	// running = false;
 	t.join();
 }
