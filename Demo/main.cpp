@@ -63,6 +63,7 @@ public:
 
     void dataProcess()
     {
+        //处理收到的数据，通过判断来解析标识符
         if(dataReceived[0] == 'C' && dataReceived[4] == 'C')
         {
             //switch autoAddFood
@@ -70,9 +71,10 @@ public:
             if(dataReceived[1] == 'A' && dataReceived[2] == 'A' && dataReceived[3] == 'A')
             {
                 autoAddFoodFlagLock.lock();
-                autoAddFoodFlag = !autoAddFoodFlag;
+                autoAddFoodFlag = !autoAddFoodFlag;//自动喂食标识符
                 autoAddFoodFlagLock.unlock();
                 
+                //改变datatosend发送数据
                 //make bluetooth send data
                 datsToSendLock.lock();
                 // 1 自动喂食
@@ -94,6 +96,7 @@ public:
                 datsToSendLock.unlock();
             }
 
+            //收到数据之后清除这个数据
             dataReceivedLock.lock();
             for(int i = 0; i<5; i++)
             {
