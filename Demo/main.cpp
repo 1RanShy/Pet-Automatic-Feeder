@@ -18,42 +18,41 @@
 using namespace std;
 
 mutex datsToSendLock;
-mutex dataReceivedLock;
-mutex autoAddFoodFlagLock;
-mutex findCatFlagLock;
+// mutex dataReceivedLock;
+// mutex autoAddFoodFlagLock;
+// mutex findCatFlagLock;
 
 char dataToSend[5] = {'H','E','L','L','O'};
 char dataReceived[5] = {'H','E','L','L','O'};
 bool autoAddFoodFlag = true; //1: autoAddFood 0: manually addFood
-bool findCatFlag = false; //1: autoAddFood 0: manually addFood
+bool findCatFlag = true; //1: autoAddFood 0: manually addFood
 
 struct MyAddFoodCallback : AddFoodcallback {
 public:
 	void findCat(HumanSensor *sensor) {
+        // datsToSendLock.lock();
         if(sensor->detect())
         {
-            findCatFlagLock.lock();
+            // findCatFlagLock.lock();
             findCatFlag = false;
-            findCatFlagLock.unlock();
+            // findCatFlagLock.unlock();
             
-            datsToSendLock.lock();
+            
             for(int i = 0; i<5; i++)
             {
                 dataToSend[i] = '3';
             }
             
-            datsToSendLock.unlock();
         }
         else
         {
-            datsToSendLock.lock();
+            // datsToSendLock.lock();
             for(int i = 0; i<5; i++)
             {
                 dataToSend[i] = '4';
             }
-            
-            datsToSendLock.unlock();
         }
+        // datsToSendLock.unlock();
     }
 };
 
@@ -77,9 +76,9 @@ public:
     void receiveData(Blue *ble)
     {
         // Blue ble;
-        dataReceivedLock.lock();
+        // dataReceivedLock.lock();
         ble->readBytes(dataReceived);
-        dataReceivedLock.unlock();  
+        // dataReceivedLock.unlock();  
         //The judgement should be like the code below:
     }
 
@@ -92,13 +91,13 @@ public:
             //Choose whether to feed automatically CAAAC
             if(dataReceived[1] == 'A' && dataReceived[2] == 'A' && dataReceived[3] == 'A')
             {
-                autoAddFoodFlagLock.lock();
+                // autoAddFoodFlagLock.lock();
                 autoAddFoodFlag = !autoAddFoodFlag;//自动喂食标识符
-                autoAddFoodFlagLock.unlock();
+                // autoAddFoodFlagLock.unlock();
                 
                 //改变datatosend发送数据
                 //make bluetooth send data
-                datsToSendLock.lock();
+                // datsToSendLock.lock();
                 // 1 自动喂食
                 if(autoAddFoodFlag == true)
                 {
@@ -115,24 +114,24 @@ public:
                         dataToSend[i] = '2';
                     }
                 }
-                datsToSendLock.unlock();
+                // datsToSendLock.unlock();
             }
             if(dataReceived[1] == 'B' && dataReceived[2] == 'B' && dataReceived[3] == 'B')
             {
-                findCatFlagLock.lock();
+                // findCatFlagLock.lock();
                 findCatFlag = true;
-                findCatFlagLock.unlock();
+                // findCatFlagLock.unlock();
             }
             //收到数据之后清除这个数据
             //全部改为 zzzzz
-            dataReceivedLock.lock();
+            // dataReceivedLock.lock();
             for(int i = 0; i<5; i++)
             {
                 // cout << dataReceived[i];
                 // cout << endl;
                 dataReceived[i] = 'Z';
             }
-            dataReceivedLock.unlock();
+            // dataReceivedLock.unlock();
         }
     }
 };

@@ -10,9 +10,9 @@ using namespace std;
     #define PIN_LED 13 
 */
 extern mutex datsToSendLock;
-extern mutex dataReceivedLock;
-extern mutex autoAddFoodFlagLock;
-extern mutex findCatFlagLock;
+// extern mutex dataReceivedLock;
+// extern mutex autoAddFoodFlagLock;
+// extern mutex findCatFlagLock;
 
 extern char dataToSend[5];
 extern char dataReceived[5];
