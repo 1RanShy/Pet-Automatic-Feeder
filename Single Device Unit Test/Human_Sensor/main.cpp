@@ -8,7 +8,14 @@ int main(void)
     while (1)
     {
         HumanSensor Sensor1(1);
-        Sensor1.detect();
+        if(Sensor1.detect())
+        {
+            cout << "1" << endl;
+        }
+        else
+        {
+            cout << "0" << endl;
+        }
         gpioDelay(1000000);
     }
     

@@ -250,6 +250,33 @@ src/BlueSendReceive.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/BlueSendReceive.cpp.s
 .PHONY : src/BlueSendReceive.cpp.s
 
+src/HumanSensor.o: src/HumanSensor.cpp.o
+
+.PHONY : src/HumanSensor.o
+
+# target to build an object file
+src/HumanSensor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HumanSensor.cpp.o
+.PHONY : src/HumanSensor.cpp.o
+
+src/HumanSensor.i: src/HumanSensor.cpp.i
+
+.PHONY : src/HumanSensor.i
+
+# target to preprocess a source file
+src/HumanSensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HumanSensor.cpp.i
+.PHONY : src/HumanSensor.cpp.i
+
+src/HumanSensor.s: src/HumanSensor.cpp.s
+
+.PHONY : src/HumanSensor.s
+
+# target to generate assembly for a file
+src/HumanSensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HumanSensor.cpp.s
+.PHONY : src/HumanSensor.cpp.s
+
 src/Pump.o: src/Pump.cpp.o
 
 .PHONY : src/Pump.o
@@ -352,6 +379,9 @@ help:
 	@echo "... src/BlueSendReceive.o"
 	@echo "... src/BlueSendReceive.i"
 	@echo "... src/BlueSendReceive.s"
+	@echo "... src/HumanSensor.o"
+	@echo "... src/HumanSensor.i"
+	@echo "... src/HumanSensor.s"
 	@echo "... src/Pump.o"
 	@echo "... src/Pump.i"
 	@echo "... src/Pump.s"

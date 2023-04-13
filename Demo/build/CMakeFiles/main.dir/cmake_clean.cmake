@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/AddFood.cpp.o"
   "CMakeFiles/main.dir/src/Blue.cpp.o"
   "CMakeFiles/main.dir/src/BlueSendReceive.cpp.o"
+  "CMakeFiles/main.dir/src/HumanSensor.cpp.o"
   "CMakeFiles/main.dir/src/Pump.cpp.o"
   "CMakeFiles/main.dir/src/SR04.cpp.o"
   "CMakeFiles/main.dir/src/Servo.cpp.o"

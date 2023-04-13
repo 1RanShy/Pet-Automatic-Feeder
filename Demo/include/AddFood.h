@@ -1,5 +1,6 @@
 #ifndef ADDFOOD_H
 #define ADDFOOD_H
+#include"HumanSensor.h"
 #include <pigpio.h>
 #include <iostream>
 #include <vector>
@@ -9,8 +10,7 @@
 // class默认 private继承
 struct AddFoodcallback {
 public:
-	virtual void addFood() = 0;// 纯虚函数 必须在类中声明 
-    virtual void stopAdd() = 0;// 纯虚函数 必须在类中声明 
+	virtual void findCat(HumanSensor *sensor) = 0;// 纯虚函数 必须在类中声明 
     // virtual void print2() = 0;// 纯虚函数 必须在类中声明 
 };
 

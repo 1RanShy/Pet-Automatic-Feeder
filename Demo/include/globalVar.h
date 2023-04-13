@@ -12,9 +12,10 @@ using namespace std;
 extern mutex datsToSendLock;
 extern mutex dataReceivedLock;
 extern mutex autoAddFoodFlagLock;
+extern mutex findCatFlagLock;
 
 extern char dataToSend[5];
 extern char dataReceived[5];
 extern bool autoAddFoodFlag; //1: autoAddFood 0: manually addFood
-
+extern bool findCatFlag;
 #endif

@@ -5,12 +5,14 @@ CMakeFiles/main.dir/main.cpp.o
  ../include/AddFood.h
  ../include/Blue.h
  ../include/BlueSendReceive.h
+ ../include/HumanSensor.h
  ../include/Pump.h
  ../include/SR04.h
  ../include/Servo.h
  /home/ranshy/Desktop/RanShuai/Demo/main.cpp
 CMakeFiles/main.dir/src/AddFood.cpp.o
  ../include/AddFood.h
+ ../include/HumanSensor.h
  ../include/Pump.h
  ../include/SR04.h
  ../include/Servo.h
@@ -25,6 +27,9 @@ CMakeFiles/main.dir/src/BlueSendReceive.cpp.o
  ../include/BlueSendReceive.h
  ../include/globalVar.h
  /home/ranshy/Desktop/RanShuai/Demo/src/BlueSendReceive.cpp
+CMakeFiles/main.dir/src/HumanSensor.cpp.o
+ ../include/HumanSensor.h
+ /home/ranshy/Desktop/RanShuai/Demo/src/HumanSensor.cpp
 CMakeFiles/main.dir/src/Pump.cpp.o
  ../include/Pump.h
  /home/ranshy/Desktop/RanShuai/Demo/src/Pump.cpp

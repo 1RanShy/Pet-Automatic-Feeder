@@ -4,12 +4,14 @@
 CMakeFiles/main.dir/main.cpp.o: ../include/AddFood.h
 CMakeFiles/main.dir/main.cpp.o: ../include/Blue.h
 CMakeFiles/main.dir/main.cpp.o: ../include/BlueSendReceive.h
+CMakeFiles/main.dir/main.cpp.o: ../include/HumanSensor.h
 CMakeFiles/main.dir/main.cpp.o: ../include/Pump.h
 CMakeFiles/main.dir/main.cpp.o: ../include/SR04.h
 CMakeFiles/main.dir/main.cpp.o: ../include/Servo.h
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/AddFood.h
+CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/HumanSensor.h
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/Pump.h
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/SR04.h
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/Servo.h
@@ -24,6 +26,9 @@ CMakeFiles/main.dir/src/BlueSendReceive.cpp.o: ../include/Blue.h
 CMakeFiles/main.dir/src/BlueSendReceive.cpp.o: ../include/BlueSendReceive.h
 CMakeFiles/main.dir/src/BlueSendReceive.cpp.o: ../include/globalVar.h
 CMakeFiles/main.dir/src/BlueSendReceive.cpp.o: ../src/BlueSendReceive.cpp
+
+CMakeFiles/main.dir/src/HumanSensor.cpp.o: ../include/HumanSensor.h
+CMakeFiles/main.dir/src/HumanSensor.cpp.o: ../src/HumanSensor.cpp
 
 CMakeFiles/main.dir/src/Pump.cpp.o: ../include/Pump.h
 CMakeFiles/main.dir/src/Pump.cpp.o: ../src/Pump.cpp

@@ -3,6 +3,7 @@
 #include "Servo.h"
 #include "SR04.h"
 #include "AddFood.h"
+#include "HumanSensor.h"
 #include "Blue.h"
 #include "BlueSendReceive.h"
 #include "Pump.h"
@@ -19,20 +20,40 @@ using namespace std;
 mutex datsToSendLock;
 mutex dataReceivedLock;
 mutex autoAddFoodFlagLock;
+mutex findCatFlagLock;
 
 char dataToSend[5] = {'H','E','L','L','O'};
 char dataReceived[5] = {'H','E','L','L','O'};
 bool autoAddFoodFlag = true; //1: autoAddFood 0: manually addFood
+bool findCatFlag = false; //1: autoAddFood 0: manually addFood
 
 struct MyAddFoodCallback : AddFoodcallback {
 public:
-	void addFood() {
-        Servo servo1(16);
-        servo1.setAngle(0);
-    }
-    void stopAdd() {
-        Servo servo1(16);
-        servo1.setAngle(180);
+	void findCat(HumanSensor *sensor) {
+        if(sensor->detect())
+        {
+            findCatFlagLock.lock();
+            findCatFlag = false;
+            findCatFlagLock.unlock();
+            
+            datsToSendLock.lock();
+            for(int i = 0; i<5; i++)
+            {
+                dataToSend[i] = '3';
+            }
+            
+            datsToSendLock.unlock();
+        }
+        else
+        {
+            datsToSendLock.lock();
+            for(int i = 0; i<5; i++)
+            {
+                dataToSend[i] = '4';
+            }
+            
+            datsToSendLock.unlock();
+        }
     }
 };
 
@@ -96,7 +117,12 @@ public:
                 }
                 datsToSendLock.unlock();
             }
-
+            if(dataReceived[1] == 'B' && dataReceived[2] == 'B' && dataReceived[3] == 'B')
+            {
+                findCatFlagLock.lock();
+                findCatFlag = true;
+                findCatFlagLock.unlock();
+            }
             //收到数据之后清除这个数据
             //全部改为 zzzzz
             dataReceivedLock.lock();
