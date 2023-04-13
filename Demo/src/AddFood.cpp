@@ -15,14 +15,16 @@ using namespace std;
 */
 void timerCallback1()
 {
-
+	PumpControl pump(12);
+	pump.stop();
+	// gpioDelay(20000);
 	if(autoAddFoodFlag == 1)
 	{
 		SR04 foodDtect(23,24);
 		Servo addFood(16);
 		SR04 waterDetect(8,7);
-		PumpControl pump(12);
-		pump.stop();
+		
+		
 		/*
 			After detection and experimentation:
 
@@ -34,7 +36,7 @@ void timerCallback1()
 		*/
 		float foodLeft = foodDtect.get_distance();
 		cout << foodLeft << "cm" << endl;
-		if(foodLeft < 4)
+		if(foodLeft < 4)//only change here
 		{
 			addFood.setAngle(0);
 			//食物多停止加东西
@@ -49,7 +51,7 @@ void timerCallback1()
 		float waterLeft = waterDetect.get_distance();
 		cout << waterLeft << "cm" << endl;
 		
-		if(waterLeft < 4)
+		if(waterLeft < 4)//only change here
 		{
 			pump.stop();
 			
@@ -67,14 +69,14 @@ void timerCallback1()
 				findCatFlagLock.unlock();
 				
 				datsToSendLock.lock();
-				if(sensor.detect())
+				if(sensor.detect() == 0)
 				{
 					for(int i = 0; i<5; i++)
 					{
 						dataToSend[i] = '3';
 					}
 				}
-				else
+				else if((sensor.detect() == 1))
 				{
 					for(int i = 0; i<5; i++)
 					{
