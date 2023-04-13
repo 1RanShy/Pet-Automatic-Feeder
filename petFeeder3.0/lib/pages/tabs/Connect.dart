@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blue/flutter_blue.dart';
 import 'package:petfeeder/pages/tabs/Menu.dart';
@@ -29,6 +30,10 @@ class _ConnectPageState extends State<ConnectPage> {
   late BluetoothCharacteristic mCharacteristicWrite;
   String sendString = "initialize";
   String reviceString = "initialize";
+
+  //按钮bool值
+  bool feedingValue = false;
+  bool presentValue = false;
 
   @override
   void initState() {
@@ -109,6 +114,18 @@ class _ConnectPageState extends State<ConnectPage> {
       print(String.fromCharCodes(value)); //表示Ascii转换成字符串
       setState(() {
         reviceString = String.fromCharCodes(value);
+        if(reviceString == "11111") {
+          reviceString = "Now it's automatic feeding mode.";
+        }
+        else if(reviceString == "22222") {
+          reviceString = "Now it's manual feeding mode.";
+        }
+        else if(reviceString == "33333") {
+          reviceString = "The cat is not here";
+        }
+        else if(reviceString == "44444") {
+          reviceString = "Cat is enjoying their food.";
+        }
         print("--------------------------------show:");
         print(reviceString);
       });
@@ -135,12 +152,13 @@ class _ConnectPageState extends State<ConnectPage> {
         ),
       ),
       body: Column(children: [
+        //判断自动或手动喂食按钮
         Container(
           alignment: Alignment.topLeft,
           margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
-          padding: EdgeInsets.fromLTRB(0, 25, 0, 25),
+          padding: EdgeInsets.fromLTRB(25, 30, 0, 0),
           // color: Colors.white,
-          height: 110,
+          height: 100,
           width: MediaQuery.of(context).size.width,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -153,17 +171,28 @@ class _ConnectPageState extends State<ConnectPage> {
           ),
           child: GridView(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 1,
+              crossAxisCount: 2,
               mainAxisSpacing: 1,
               crossAxisSpacing: 1,
-              childAspectRatio: 1 / 0.1,
+              childAspectRatio: 1 / 0.3,
             ),
             children: [
-              IconButton (
-                icon: Icon(Icons.pan_tool, color: Colors.orange,),
-                iconSize: 56,
-                onPressed: () async {
+              Text("Manual Or Automatic Feeding", textAlign: TextAlign.center, style: TextStyle(color: Colors.black,),),
+
+              Transform.scale(
+              scale: 1.5,
+              child:
+                Switch(
+                activeColor: Color.fromRGBO(187,215,216,0.5),
+                activeTrackColor: Color.fromRGBO(187,215,216,0.5),
+                inactiveThumbColor: Colors.black12,
+                inactiveTrackColor:Colors.black12,
+                dragStartBehavior: DragStartBehavior.start,
+
+                value: this.feedingValue,
+                onChanged: (bool v) async {
                   setState(() {
+                    this.feedingValue = v;
                     this.sendString = "CAAAC";
                   });
                   print(sendString);
@@ -172,9 +201,66 @@ class _ConnectPageState extends State<ConnectPage> {
 
                   // await this.mCharacteristics.write([97, 98]);
                   await this.mCharacteristicWrite.write(convertedCommand);
-                }
+                },
+              ),
               ),
             ]
+          ),
+        ),
+
+        //判断猫猫在不在按钮
+        Container(
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+          padding: EdgeInsets.fromLTRB(25, 30, 0, 0),
+          // color: Colors.white,
+          height: 80,
+          width: MediaQuery.of(context).size.width,
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.white,
+                // offset: Offset(5, 5),
+              ),
+            ],
+          ),
+          child: GridView(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 1,
+                crossAxisSpacing: 1,
+                childAspectRatio: 1 / 0.2,
+              ),
+              children: [
+                Text("Is The Cat Present", textAlign: TextAlign.center, style: TextStyle(color: Colors.black,),),
+
+                Transform.scale(
+                  scale: 1.5,
+                  child:
+                  Switch(
+                    activeColor: Color.fromRGBO(187,215,216,0.5),
+                    activeTrackColor: Color.fromRGBO(187,215,216,0.5),
+                    inactiveThumbColor: Colors.black12,
+                    inactiveTrackColor:Colors.black12,
+                    dragStartBehavior: DragStartBehavior.start,
+
+                    value: this.presentValue,
+                    onChanged: (bool v) async {
+                      setState(() {
+                        this.presentValue = v;
+                        this.sendString = "CBBBC";
+                      });
+                      print(sendString);
+                      final command = this.sendString;
+                      final convertedCommand = AsciiEncoder().convert(command);
+
+                      // await this.mCharacteristics.write([97, 98]);
+                      await this.mCharacteristicWrite.write(convertedCommand);
+                    },
+                  ),
+                ),
+              ]
           ),
         ),
 
@@ -281,7 +367,7 @@ class _ConnectPageState extends State<ConnectPage> {
             margin: EdgeInsets.fromLTRB(10, 0, 10, 10),
             padding: EdgeInsets.all(15),
             // color: Colors.white,
-            height: 200,
+            height: 150,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -312,7 +398,7 @@ class _ConnectPageState extends State<ConnectPage> {
             margin: EdgeInsets.fromLTRB(10, 0, 10, 10),
             padding: EdgeInsets.all(15),
             // color: Colors.white,
-            height: 200,
+            height: 150,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(10)),
