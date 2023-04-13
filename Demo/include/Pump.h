@@ -1,17 +1,15 @@
 #ifndef PUMP_H
 #define PUMP_H
 
-#include <pigpio.h>
-
-class Pump
+class PumpControl
 {
 public:
-    Pump(unsigned int gpio_pin);
-    ~Pump();
+    PumpControl(unsigned int pin);
+    ~PumpControl();
     void start();
     void stop();
 private:
-    unsigned int pin;
+    int gpio_pin;
 };
 
 #endif // PUMP_CONTROL_H

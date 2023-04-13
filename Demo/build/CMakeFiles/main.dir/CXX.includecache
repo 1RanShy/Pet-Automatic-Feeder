@@ -16,19 +16,7 @@ vector
 thread
 -
 
-../include/Blue.h
-pigpio.h
--
-
-../include/BlueSendReceive.h
-pigpio.h
--
-iostream
--
-vector
--
-thread
--
+../include/Pump.h
 
 ../include/SR04.h
 pigpio.h
@@ -59,22 +47,10 @@ Servo.h
 /home/ranshy/Desktop/RanShuai/Demo/src/Servo.h
 globalVar.h
 /home/ranshy/Desktop/RanShuai/Demo/src/globalVar.h
+Pump.h
+/home/ranshy/Desktop/RanShuai/Demo/src/Pump.h
 iostream
 -
 thread
--
-
-/home/ranshy/Desktop/RanShuai/Demo/src/BlueSendReceive.cpp
-globalVar.h
-/home/ranshy/Desktop/RanShuai/Demo/src/globalVar.h
-Blue.h
-/home/ranshy/Desktop/RanShuai/Demo/src/Blue.h
-iostream
--
-thread
--
-BlueSendReceive.h
--
-mutex
 -
 

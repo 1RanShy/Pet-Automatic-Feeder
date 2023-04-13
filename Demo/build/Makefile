@@ -250,6 +250,33 @@ src/BlueSendReceive.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/BlueSendReceive.cpp.s
 .PHONY : src/BlueSendReceive.cpp.s
 
+src/Pump.o: src/Pump.cpp.o
+
+.PHONY : src/Pump.o
+
+# target to build an object file
+src/Pump.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pump.cpp.o
+.PHONY : src/Pump.cpp.o
+
+src/Pump.i: src/Pump.cpp.i
+
+.PHONY : src/Pump.i
+
+# target to preprocess a source file
+src/Pump.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pump.cpp.i
+.PHONY : src/Pump.cpp.i
+
+src/Pump.s: src/Pump.cpp.s
+
+.PHONY : src/Pump.s
+
+# target to generate assembly for a file
+src/Pump.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pump.cpp.s
+.PHONY : src/Pump.cpp.s
+
 src/SR04.o: src/SR04.cpp.o
 
 .PHONY : src/SR04.o
@@ -325,6 +352,9 @@ help:
 	@echo "... src/BlueSendReceive.o"
 	@echo "... src/BlueSendReceive.i"
 	@echo "... src/BlueSendReceive.s"
+	@echo "... src/Pump.o"
+	@echo "... src/Pump.i"
+	@echo "... src/Pump.s"
 	@echo "... src/SR04.o"
 	@echo "... src/SR04.i"
 	@echo "... src/SR04.s"

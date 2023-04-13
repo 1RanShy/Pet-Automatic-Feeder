@@ -1,10 +1,11 @@
 #include <pigpio.h>
-#include "./include/Servo.h"
-#include "./include/SR04.h"
-#include "./include/AddFood.h"
-#include "./include/Blue.h"
-#include "BlueSendReceive.h"
 // #include "globalVar.h"
+#include "Servo.h"
+#include "SR04.h"
+#include "AddFood.h"
+#include "Blue.h"
+#include "BlueSendReceive.h"
+#include "Pump.h"
 #include <stdio.h>
 #include <iostream>
 #include <chrono>
