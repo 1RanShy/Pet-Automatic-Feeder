@@ -12,11 +12,11 @@ void sendByte(unsigned int x)
 
 void readByte(unsigned int x)
 {
-    if (serDataAvailable(x)) // 先判断有没有数据读
+    if (serDataAvailable(x)) // if there is data in the buffer
     {
 
         cout << serReadByte(x) << endl;
-        while (serDataAvailable(x)); // 有数据读就读直到读完
+        while (serDataAvailable(x)); // read all datas and wait here
     }
     /*
      * add delay is ok. Because read also need time.
@@ -33,7 +33,7 @@ void readBytes(unsigned int x,char *buff,unsigned char count)
     if(count)
     {
         serRead(x,buff,count);
-        while (serDataAvailable(x)); // 有数据读就读直到读完
+        while (serDataAvailable(x)); // read all datas and wait here
         cout << buff[0] << "  " << buff[1] << "  " << buff[2] << "  " << endl;
     }
 }
@@ -64,11 +64,11 @@ int main(void)
     while (1)
     {
         /*
-        if (serDataAvailable(x)) // 先判断有没有数据读
+        if (serDataAvailable(x)) // if there is data in the buffer
         {
 
             cout << serReadByte(x) << endl;
-            while (serDataAvailable(x)); // 有数据读就读直到读完
+            while (serDataAvailable(x)); // read all data and wait
         }
         */
         //writeBytes(x,buff,5);

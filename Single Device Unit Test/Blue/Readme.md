@@ -1,4 +1,42 @@
 # This is a demo about bluetooth
+If youn want to open the serial port in Respberry, youshould follow this website.
+
+And also open serial in Respberryy configure
+[How to open serial in Respberry](https://www.abelectronics.co.uk/kb/article/1035/serial-port-setup-in-raspberry-pi-os)
+
+# Example
+~~~text
+pigpio pin:
+tx 14
+rx 15
+~~~
+
+~~~c++
+#include<pigpio.h>
+#include<iostream>
+#include"./include/Blue.h"
+
+using namespace std;
+int main(void)
+{
+    Blue ble;
+    char buff[10] = {1, 2, 3, 4, 5};
+    while (1)
+    {
+        ble.readBytes(buff); // output character HEX/ASCII
+        ble.sendByte(buff[0]);
+        ble.writeBytes(buff, 5);
+    }
+    return 0;
+}
+~~~
+~~~cmake
+# cd build
+cmake ..
+make 
+sudo ./main
+~~~
+
 
 这个是串口协议，也是蓝牙芯片的使用demo
 ~~~text

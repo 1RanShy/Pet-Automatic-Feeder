@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/src/hcsr04.cpp.o CMakeFiles/main.dir/src/TimeUtils.cpp.o -o main  -Wl,-rpath,/usr/local/lib /usr/lib/libwiringPi.so /usr/local/lib/libpigpio.so 

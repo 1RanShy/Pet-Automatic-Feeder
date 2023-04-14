@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shy/Desktop/ranshuai/Thread/Thread_3/callbacks.h
+scanf.h
+/home/shy/Desktop/ranshuai/Thread/Thread_3/scanf.h
+iostream
+-
+
+/home/shy/Desktop/ranshuai/Thread/Thread_3/main.cpp
+scanf.h
+/home/shy/Desktop/ranshuai/Thread/Thread_3/scanf.h
+callbacks.h
+/home/shy/Desktop/ranshuai/Thread/Thread_3/callbacks.h
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+iostream
+-
+thread
+-
+
+/home/shy/Desktop/ranshuai/Thread/Thread_3/scanf.cpp
+scanf.h
+/home/shy/Desktop/ranshuai/Thread/Thread_3/scanf.h
+iostream
+-
+thread
+-
+
+/home/shy/Desktop/ranshuai/Thread/Thread_3/scanf.h
+iostream
+-
+thread
+-
+vector
+-
+

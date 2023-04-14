@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Pump.h
+
+/home/ranshy/Desktop/yulong/pump_control/main.cpp
+Pump.h
+/home/ranshy/Desktop/yulong/pump_control/Pump.h
+iostream
+-
+pigpio.h
+-
+

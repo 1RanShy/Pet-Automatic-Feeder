@@ -1,0 +1,18 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/main.cpp.o"
+  "CMakeFiles/main.dir/src/AddFood.cpp.o"
+  "CMakeFiles/main.dir/src/Blue.cpp.o"
+  "CMakeFiles/main.dir/src/BlueSendReceive.cpp.o"
+  "CMakeFiles/main.dir/src/HumanSensor.cpp.o"
+  "CMakeFiles/main.dir/src/Pump.cpp.o"
+  "CMakeFiles/main.dir/src/SR04.cpp.o"
+  "CMakeFiles/main.dir/src/Servo.cpp.o"
+  "CMakeFiles/main.dir/src/foodWaterDetect.cpp.o"
+  "main"
+  "main.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/main.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
