@@ -30,6 +30,8 @@ class _ConnectPageState extends State<ConnectPage> {
   late BluetoothCharacteristic mCharacteristicWrite;
   String sendString = "initialize";
   String reviceString = "initialize";
+  String mOrAString = "The feeding mode: ";
+  String catDetectString = "The result: ";
 
   //按钮bool值
   bool feedingValue = false;
@@ -115,16 +117,16 @@ class _ConnectPageState extends State<ConnectPage> {
       setState(() {
         reviceString = String.fromCharCodes(value);
         if(reviceString == "11111") {
-          reviceString = "Now it's automatic feeding mode.";
+          mOrAString = "Now it's automatic feeding mode.";
         }
         else if(reviceString == "22222") {
-          reviceString = "Now it's manual feeding mode.";
+          mOrAString = "Now it's manual feeding mode.";
         }
         else if(reviceString == "33333") {
-          reviceString = "The cat is not here";
+          catDetectString = "The cat is not here";
         }
         else if(reviceString == "44444") {
-          reviceString = "Cat is enjoying their food.";
+          catDetectString = "Cat is enjoying their food.";
         }
         print("--------------------------------show:");
         print(reviceString);
@@ -152,13 +154,121 @@ class _ConnectPageState extends State<ConnectPage> {
         ),
       ),
       body: Column(children: [
-        //判断自动或手动喂食按钮
         Container(
           alignment: Alignment.topLeft,
           margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
-          padding: EdgeInsets.fromLTRB(25, 30, 0, 0),
+          padding: EdgeInsets.fromLTRB(0, 5, 0, 5),
           // color: Colors.white,
-          height: 100,
+          height: 80,
+          width: MediaQuery.of(context).size.width,
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.white,
+                // offset: Offset(5, 5),
+              ),
+            ],
+          ),
+          child: GridView(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 4,
+              mainAxisSpacing: 2,
+              crossAxisSpacing: 1,
+              childAspectRatio: 1 / 0.5,
+            ),
+            children: [
+              IconButton (
+                  icon: Icon(Icons.restaurant, color: Colors.amber,),
+                  iconSize: 32,
+                  onPressed: () async {
+                    setState(() {
+                      this.sendString = "Food";
+                    });
+                    print(sendString);
+                    final command = this.sendString;
+                    final convertedCommand = AsciiEncoder().convert(command);
+
+                    // await this.mCharacteristics.write([97, 98]);
+                    await this.mCharacteristicWrite.write(convertedCommand);
+                  }
+              ),
+              IconButton (
+                  icon: Icon(Icons.local_drink, color: Colors.cyan,),
+                  iconSize: 32,
+                  onPressed: () async {
+                    setState(() {
+                      this.sendString = "Water";
+                    });
+                    print(sendString);
+                    final command = this.sendString;
+                    final convertedCommand = AsciiEncoder().convert(command);
+
+                    // await this.mCharacteristics.write([97, 98]);
+                    await this.mCharacteristicWrite.write(convertedCommand);
+                  }
+              ),
+              IconButton (
+                  icon: Icon(Icons.delete_outline, color: Colors.red,),
+                  iconSize: 32,
+                  onPressed: () async {
+                    setState(() {
+                      this.sendString = "Clean";
+                    });
+                    print(sendString);
+                    final command = this.sendString;
+                    final convertedCommand = AsciiEncoder().convert(command);
+
+                    // await this.mCharacteristics.write([97, 98]);
+                    await this.mCharacteristicWrite.write(convertedCommand);
+                  }
+              ),
+              IconButton (
+                  icon: Icon(Icons.videocam, color: Colors.lightGreen,),
+                  iconSize: 32,
+                  onPressed: () async {
+                    setState(() {
+                      this.sendString = "Camera";
+                    });
+                    print(sendString);
+                    final command = this.sendString;
+                    final convertedCommand = AsciiEncoder().convert(command);
+
+                    // await this.mCharacteristics.write([97, 98]);
+                    await this.mCharacteristicWrite.write(convertedCommand);
+                  }
+              ),
+
+
+              // Icon(Icons.restaurant, color: Colors.amber,),
+              // Icon(Icons.local_drink, color: Colors.cyan,),
+              // Icon(Icons.delete_outline, color: Colors.red,),
+              // Icon(Icons.videocam, color: Colors.lightGreen,),
+              Text("Food", textAlign: TextAlign.center, style: TextStyle(color: Colors.amber,),),
+              Text("Water", textAlign: TextAlign.center, style: TextStyle(color: Colors.cyan,),),
+              Text("Clean", textAlign: TextAlign.center, style: TextStyle(color: Colors.red,),),
+              Text("Camera", textAlign: TextAlign.center, style: TextStyle(color: Colors.lightGreen,),),
+            ],
+          ),
+        ),
+
+        Container(
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+          // color: Colors.white,
+          height: 15,
+          width: MediaQuery.of(context).size.width,
+          child: Divider(),
+        ),
+
+        //判断自动或手动喂食按钮
+        Container(
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+          padding: EdgeInsets.fromLTRB(25, 20, 0, 0),
+          // color: Colors.white,
+          height: 75,
           width: MediaQuery.of(context).size.width,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -180,7 +290,7 @@ class _ConnectPageState extends State<ConnectPage> {
               Text("Manual Or Automatic Feeding", textAlign: TextAlign.center, style: TextStyle(color: Colors.black,),),
 
               Transform.scale(
-              scale: 1.5,
+              scale: 1.4,
               child:
                 Switch(
                 activeColor: Color.fromRGBO(187,215,216,0.5),
@@ -208,13 +318,52 @@ class _ConnectPageState extends State<ConnectPage> {
           ),
         ),
 
-        //判断猫猫在不在按钮
         Container(
           alignment: Alignment.topLeft,
           margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
-          padding: EdgeInsets.fromLTRB(25, 30, 0, 0),
+          padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
           // color: Colors.white,
-          height: 80,
+          height: 20,
+          width: MediaQuery.of(context).size.width,
+          child: Text(
+            mOrAString,
+            style: TextStyle(color: Colors.black),
+            // textAlign: TextAlign.center,
+            ),
+        ),
+
+        Container(
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+          // color: Colors.white,
+          height: 15,
+          width: MediaQuery.of(context).size.width,
+          child: Divider(),
+        ),
+
+        Container(
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+          padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+          // color: Colors.white,
+          height: 60,
+          width: MediaQuery.of(context).size.width,
+          child: Text(
+            "You can press this button to check if the cat is eating when the water is full or in manual mode:",
+            style: TextStyle(
+              color: Colors.black38,
+            ),
+          ),
+        ),
+
+        //判断猫猫在不在按钮
+        Container(
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+          padding: EdgeInsets.fromLTRB(25, 25, 0, 0),
+          // color: Colors.white,
+          height: 70,
           width: MediaQuery.of(context).size.width,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -233,10 +382,14 @@ class _ConnectPageState extends State<ConnectPage> {
                 childAspectRatio: 1 / 0.2,
               ),
               children: [
-                Text("Is The Cat Present", textAlign: TextAlign.center, style: TextStyle(color: Colors.black,),),
+                Text(
+                  "Where The Cat",
+                  // textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.black,),
+                ),
 
                 Transform.scale(
-                  scale: 1.5,
+                  scale: 1.4,
                   child:
                   Switch(
                     activeColor: Color.fromRGBO(187,215,216,0.5),
@@ -265,109 +418,35 @@ class _ConnectPageState extends State<ConnectPage> {
         ),
 
         Container(
-            alignment: Alignment.topLeft,
-            margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
-            padding: EdgeInsets.fromLTRB(0, 25, 0, 25),
-            // color: Colors.white,
-            height: 110,
-            width: MediaQuery.of(context).size.width,
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.white,
-                  // offset: Offset(5, 5),
-                ),
-              ],
-            ),
-            child: GridView(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 4,
-                mainAxisSpacing: 2,
-                crossAxisSpacing: 1,
-                childAspectRatio: 1 / 0.5,
-              ),
-              children: [
-                IconButton (
-                  icon: Icon(Icons.restaurant, color: Colors.amber,),
-                  iconSize: 40,
-                  onPressed: () async {
-                    setState(() {
-                      this.sendString = "Food";
-                    });
-                    print(sendString);
-                    final command = this.sendString;
-                    final convertedCommand = AsciiEncoder().convert(command);
-
-                    // await this.mCharacteristics.write([97, 98]);
-                    await this.mCharacteristicWrite.write(convertedCommand);
-                  }
-                ),
-                IconButton (
-                    icon: Icon(Icons.local_drink, color: Colors.cyan,),
-                    iconSize: 40,
-                    onPressed: () async {
-                      setState(() {
-                        this.sendString = "Water";
-                      });
-                      print(sendString);
-                      final command = this.sendString;
-                      final convertedCommand = AsciiEncoder().convert(command);
-
-                      // await this.mCharacteristics.write([97, 98]);
-                      await this.mCharacteristicWrite.write(convertedCommand);
-                    }
-                ),
-                IconButton (
-                    icon: Icon(Icons.delete_outline, color: Colors.red,),
-                    iconSize: 40,
-                    onPressed: () async {
-                      setState(() {
-                        this.sendString = "Clean";
-                      });
-                      print(sendString);
-                      final command = this.sendString;
-                      final convertedCommand = AsciiEncoder().convert(command);
-
-                      // await this.mCharacteristics.write([97, 98]);
-                      await this.mCharacteristicWrite.write(convertedCommand);
-                    }
-                ),
-                IconButton (
-                    icon: Icon(Icons.videocam, color: Colors.lightGreen,),
-                    iconSize: 40,
-                    onPressed: () async {
-                      setState(() {
-                        this.sendString = "Camera";
-                      });
-                      print(sendString);
-                      final command = this.sendString;
-                      final convertedCommand = AsciiEncoder().convert(command);
-
-                      // await this.mCharacteristics.write([97, 98]);
-                      await this.mCharacteristicWrite.write(convertedCommand);
-                    }
-                ),
-
-
-                // Icon(Icons.restaurant, color: Colors.amber,),
-                // Icon(Icons.local_drink, color: Colors.cyan,),
-                // Icon(Icons.delete_outline, color: Colors.red,),
-                // Icon(Icons.videocam, color: Colors.lightGreen,),
-                Text("Food", textAlign: TextAlign.center, style: TextStyle(color: Colors.amber,),),
-                Text("Water", textAlign: TextAlign.center, style: TextStyle(color: Colors.cyan,),),
-                Text("Clean", textAlign: TextAlign.center, style: TextStyle(color: Colors.red,),),
-                Text("Camera", textAlign: TextAlign.center, style: TextStyle(color: Colors.lightGreen,),),
-              ],
-            ),
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+          padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+          // color: Colors.white,
+          height: 20,
+          width: MediaQuery.of(context).size.width,
+          child: Text(
+            catDetectString,
+            style: TextStyle(color: Colors.black),
+            // textAlign: TextAlign.center,
           ),
+        ),
+
+        Container(
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+          // color: Colors.white,
+          height: 15,
+          width: MediaQuery.of(context).size.width,
+          child: Divider(),
+        ),
 
           Container(
             alignment: Alignment.topLeft,
-            margin: EdgeInsets.fromLTRB(10, 0, 10, 10),
+            margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
             padding: EdgeInsets.all(15),
             // color: Colors.white,
-            height: 150,
+            height: 100,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -395,10 +474,10 @@ class _ConnectPageState extends State<ConnectPage> {
           // ReceivedCard(),
           Container(
             alignment: Alignment.topLeft,
-            margin: EdgeInsets.fromLTRB(10, 0, 10, 10),
+            margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
             padding: EdgeInsets.all(15),
             // color: Colors.white,
-            height: 150,
+            height: 100,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(10)),
