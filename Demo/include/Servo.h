@@ -3,7 +3,7 @@
 #include <pigpio.h>
 #include <iostream>
 #include <vector>
-
+// Just a device class
 class Servo
 {
 private:

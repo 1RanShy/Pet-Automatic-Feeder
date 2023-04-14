@@ -3,7 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+// SR04 Interface
+/*
+I did use delay/sleep here, and there are the following reasons:
 
+It's because ultrasonic distance measurement requires sending ultrasonic waves for a certain period of time (50us).
+More importantly, this module is called in a timer and executed in another thread, which basically does not affect the real-time performance of the system.
+*/
 SR04::SR04(unsigned int trigger_pin, unsigned int echo_pin) :
         trigger_pin_(trigger_pin), echo_pin_(echo_pin) {
     if (gpioInitialise() < 0) {
@@ -14,7 +20,7 @@ SR04::SR04(unsigned int trigger_pin, unsigned int echo_pin) :
     gpioSetMode(echo_pin_, PI_INPUT);
     gpioWrite(trigger_pin_, PI_OFF);
     // usleep(200000); // wait 200ms initialse the sensor, this must be done by sleep
-    gpioDelay(2000);
+    // gpioDelay(2000);
 }
 
 SR04::~SR04() {
@@ -23,7 +29,6 @@ SR04::~SR04() {
 
 float SR04::get_distance() {
     gpioWrite(trigger_pin_, PI_ON); // 开始发送超声波
-    // usleep(10); 
     gpioSleep(PI_TIME_RELATIVE, 0, 100000); // sleep for 10us
     gpioWrite(trigger_pin_, PI_OFF); // 发送结束
     unsigned int level = gpioRead(echo_pin_);

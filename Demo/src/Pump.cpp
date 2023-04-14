@@ -1,5 +1,7 @@
 #include "Pump.h"
 #include <pigpio.h>
+// Pump control Interfaces
+
 PumpControl::PumpControl(unsigned int pin)
 {
     gpioInitialise(); // 初始化PIGPIO库

@@ -4,7 +4,7 @@
 #include "Blue.h"
 #include "globalVar.h"
 using namespace std;
-
+// Bluetooth interface
 
 Blue::Blue()
 {

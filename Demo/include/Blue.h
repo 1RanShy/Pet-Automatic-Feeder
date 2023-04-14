@@ -1,7 +1,7 @@
 #ifndef BLUE_H
 #define BLUE_H
 #include<pigpio.h>
-
+//This is a class about bluetooth chip 
 class Blue{
 private:
     int status;

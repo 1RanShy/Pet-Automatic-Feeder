@@ -2,7 +2,7 @@
 #include <iostream>
 #include "HumanSensor.h"
 using namespace std;
-
+//Human Sensor interfaces
 HumanSensor::HumanSensor(unsigned int gpio_pin)
 {
     pin = gpio_pin;

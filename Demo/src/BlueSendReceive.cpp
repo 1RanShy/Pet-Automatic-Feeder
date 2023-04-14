@@ -5,6 +5,13 @@
 #include<BlueSendReceive.h>
 #include<mutex>
 using namespace std;
+/*
+	This is a thread to :
+	1. Receive data
+	2. Send data
+	3. Process data
+*/
+
 
 BLEDataProcessing::~BLEDataProcessing()
 {
@@ -55,6 +62,7 @@ void BLEDataProcessing::registerCallback(BlueToothcallback* blue){
 }
 
 void BLEDataProcessing::start(){
+	gpioInitialise();
 	t = thread(&BLEDataProcessing::DataProcessing,this);
 }
 

@@ -4,12 +4,14 @@
 #include <iostream>
 #include <vector>
 #include <thread>
-// 定义一个strcur 
-// struct 默认 public继承
-// class默认 private继承
+/*
+This creates a class specifically for receiving, 
+sending, and processing Bluetooth data, 
+and I believe there is a real-time aspect involved.
+*/
 struct BlueToothcallback {
 public:
-	virtual void sendData(Blue *ble) = 0; //纯虚函数 必须在类中声明 
+	virtual void sendData(Blue *ble) = 0; 
     virtual void receiveData(Blue *ble) = 0;
 	virtual void dataProcess() = 0; //data process
 };
@@ -19,8 +21,8 @@ class BLEDataProcessing{
 private:
     bool running;
 	std::thread t;
-	void DataProcessing();//main programm to add or stop adding food
-	std::vector<BlueToothcallback*> bluetoothCallbacks; // Vector<类型>标识符
+	void DataProcessing();//process bluetooth data
+	std::vector<BlueToothcallback*> bluetoothCallbacks; 
 public:
 	void registerCallback(BlueToothcallback* blue);
 	void start();
