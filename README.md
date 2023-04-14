@@ -61,4 +61,4 @@ We use servo motors to control a series of actions in the automatic feeding syst
 
 The camera
 
-
+![127539acf8cd7762206ece3e3900d3d](https://user-images.githubusercontent.com/123078993/232022880-85f9086f-bb59-4ab4-8e48-9f806b458ede.png)
