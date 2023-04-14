@@ -112,6 +112,7 @@ void timerCallback1()
 		cout << "Engine Stop" << endl;
 		pump.stop();
 		addFood.setAngle(0);
+
 		if(findCatFlag == true)
 		{
 			HumanSensor sensor(1);
