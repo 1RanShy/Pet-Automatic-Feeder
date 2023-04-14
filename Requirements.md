@@ -18,7 +18,22 @@ To do List
 [X] 接收还有问题 
 
 ~~~
+~~~text
+To do List:
 
+[X] SR04: Delete usleep(10) then test. Tried it, deleting it doesn't work.
+[X] Blue Thread: Write it tomorrow.
+[x] Test if changing to vector works. No need to change it because the pigpio library requires it to be a char *, and it can be changed to a vector after buff is changed.
+
+[ ] Bluetooth receiving and transmitting commands.
+[ ] Enable and disable automatic feeding mode.
+[ ] What information can be sent to the phone?
+
+Cat is currently eating.
+Bluetooth transmission information:
+[X] Sending is basically resolved.
+[X] Receiving still has issues.
+~~~
 
 ~~~text
 自动喂食的开关写好了，现在需要 
@@ -39,18 +54,33 @@ XXX是用来判断这一段命令到底是什么操作的标识符
 R和Z不要在自定义命令中出现
 ~~~
 
+~~~text
+The switch for automatic feeding is done, now we need a Bluetooth protocol:
+Auto-feeding
+CAAAC: switch between automatic and manual feeding
+11111: automatic feeding mode
+00000: manual feeding mode
+Change the value of dataToSend by checking the autoAddFoodFlag
+
+After sending, change all values of dataToSend to "R"
+After using dataReceived, change all values to "z"
+
+The command format is:
+CXXXC, where the two "C"s at the beginning and end indicate a valid command
+"XXX" is the identifier used to determine the operation of this command
+Do not use "R" and "Z" in custom commands.
+~~~
 
 
 
-
-## 待做
+## To Do
 ~~~text
 [x] 测试 改 水泵
 [x] 该电路图 水泵现在是 tx边 倒数第二个 把它改成别的引脚 倒数三个留给servo engine
 [x] 水泵和SR04的联合调试
 ~~~
 
-# 待添加的功能
+# The function which will be added later
 ~~~text
 [ ] 手动更改最大能够加到多大的深度
 
@@ -63,6 +93,22 @@ R和Z不要在自定义命令中出现
 [ ] 如何让树莓派开机自启动 main程序
 
 食物的回收，使用定时器，里面带点延迟到底行不行？
+~~~
+
+~~~text
+[ ] Manually change the maximum depth that can be reached
+
+Here's what I'm thinking:
+1. Modify the maximum depth in the program
+2. Adjust the position of the cat food bowl in the model
+
+[ ] Determine the direction of the multi-level rotation when there is less food
+If the distance is large, it means there is little food left, and it's time to add food
+If the distance is small, it means there is plenty of food left, and it's time to stop adding food
+
+[ ] How to make the Raspberry Pi automatically start the main program at boot
+
+Regarding the food retrieval, using a timer with some delay inside, is that feasible?
 ~~~
 
 
@@ -92,6 +138,29 @@ Turn off the water pump before turning on SR04 each time.
 
 ~~~
 
+~~~text
+1. 自动喂食和手动喂食
+2. 在手机app上使用按钮切换自动和手动喂食模式
+3. 可判断宠物是否正在吃东西，显示此状态在手机上
+4. 可是使用蓝牙与猫咪互动
+
+1. Automatic and manual feeding
+2. Use buttons on the mobile app to switch between automatic and manual feeding modes
+3. Ability to detect whether the pet is currently eating and display this 4. status on the mobile app
+Ability to interact with the cat via Bluetooth.
+~~~
+
+~~~text
+1. 改变自动喂食与手动喂食模式
+2. 通过人体传感器检测宠物是否在进食
+3. 在自动喂食模式下：通过声波测距传感器判断食物的剩余量来自动添加食物
+1. Change between automatic and manual feeding modes
+2. Detect whether the pet is eating through a human body sensor
+3. In automatic feeding mode: use an ultrasonic distance sensor to determine the remaining amount of food and automatically add food.
+~~~
+
+
+
 # Pin 
 
 ~~~text
@@ -102,39 +171,5 @@ Bluetooth demo has worked properly. It takes me three days to fix it. Finally it
 
 
 
-~~~text
-To do List:
 
-[X] SR04: Delete usleep(10) then test. Tried it, deleting it doesn't work.
-[X] Blue Thread: Write it tomorrow.
-[x] Test if changing to vector works. No need to change it because the pigpio library requires it to be a char *, and it can be changed to a vector after buff is changed.
 
-[ ] Bluetooth receiving and transmitting commands.
-[ ] Enable and disable automatic feeding mode.
-[ ] What information can be sent to the phone?
-
-Cat is currently eating.
-Bluetooth transmission information:
-[X] Sending is basically resolved.
-[X] Receiving still has issues.
-~~~
-
-~~~text
-1. 自动喂食和手动喂食
-2. 在手机app上使用按钮切换自动和手动喂食模式
-3. 可判断宠物是否正在吃东西，显示此状态在手机上
-4. 可是使用蓝牙与猫咪互动
-~~~
-
-~~~text
-1. 改变自动喂食与手动喂食模式
-2. 通过人体传感器检测宠物是否在进食
-3. 在自动喂食模式下：通过声波测距传感器判断食物的剩余量来自动添加食物
-~~~
-
-~~~text
-    我确实在这里使用了delay/sleep
-    这有着以下原因
-    1. 这是因为超声波测据需要发送一定时间的超声波（50us）。
-    2. 更重要的是，这个模块会在定时器中调用，基本上算是在另一个线程中执行了，不会影响系统的实时性
-~~~
