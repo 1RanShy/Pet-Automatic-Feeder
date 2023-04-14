@@ -1,5 +1,5 @@
 # Requirements
-1. pin 写在private中
+
 
 ~~~text
 To do List
@@ -120,7 +120,7 @@ Regarding the food retrieval, using a timer with some delay inside, is that feas
 
 
 
- 
+
 # Problems I met
 ~~~text
 经过检测和实验：
