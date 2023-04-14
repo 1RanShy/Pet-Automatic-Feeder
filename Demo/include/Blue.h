@@ -2,6 +2,7 @@
 #define BLUE_H
 #include<pigpio.h>
 //This is a class about bluetooth chip 
+// Just a device driver class
 class Blue{
 private:
     int status;

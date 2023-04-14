@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ranshy/Desktop/RanShuai/Demo/src/Pump.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/Pump.cpp.o"
   "/home/ranshy/Desktop/RanShuai/Demo/src/SR04.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/SR04.cpp.o"
   "/home/ranshy/Desktop/RanShuai/Demo/src/Servo.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/Servo.cpp.o"
+  "/home/ranshy/Desktop/RanShuai/Demo/src/foodWaterDetect.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/foodWaterDetect.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

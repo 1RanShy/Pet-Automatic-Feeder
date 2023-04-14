@@ -8,6 +8,7 @@ CMakeFiles/main.dir/main.cpp.o: ../include/HumanSensor.h
 CMakeFiles/main.dir/main.cpp.o: ../include/Pump.h
 CMakeFiles/main.dir/main.cpp.o: ../include/SR04.h
 CMakeFiles/main.dir/main.cpp.o: ../include/Servo.h
+CMakeFiles/main.dir/main.cpp.o: ../include/globalVar.h
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/AddFood.h
@@ -15,6 +16,7 @@ CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/HumanSensor.h
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/Pump.h
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/SR04.h
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/Servo.h
+CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/foodWaterDetect.h
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../include/globalVar.h
 CMakeFiles/main.dir/src/AddFood.cpp.o: ../src/AddFood.cpp
 
@@ -38,4 +40,12 @@ CMakeFiles/main.dir/src/SR04.cpp.o: ../src/SR04.cpp
 
 CMakeFiles/main.dir/src/Servo.cpp.o: ../include/Servo.h
 CMakeFiles/main.dir/src/Servo.cpp.o: ../src/Servo.cpp
+
+CMakeFiles/main.dir/src/foodWaterDetect.cpp.o: ../include/HumanSensor.h
+CMakeFiles/main.dir/src/foodWaterDetect.cpp.o: ../include/Pump.h
+CMakeFiles/main.dir/src/foodWaterDetect.cpp.o: ../include/SR04.h
+CMakeFiles/main.dir/src/foodWaterDetect.cpp.o: ../include/Servo.h
+CMakeFiles/main.dir/src/foodWaterDetect.cpp.o: ../include/foodWaterDetect.h
+CMakeFiles/main.dir/src/foodWaterDetect.cpp.o: ../include/globalVar.h
+CMakeFiles/main.dir/src/foodWaterDetect.cpp.o: ../src/foodWaterDetect.cpp
 

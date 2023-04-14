@@ -358,6 +358,33 @@ src/Servo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo.cpp.s
 .PHONY : src/Servo.cpp.s
 
+src/foodWaterDetect.o: src/foodWaterDetect.cpp.o
+
+.PHONY : src/foodWaterDetect.o
+
+# target to build an object file
+src/foodWaterDetect.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/foodWaterDetect.cpp.o
+.PHONY : src/foodWaterDetect.cpp.o
+
+src/foodWaterDetect.i: src/foodWaterDetect.cpp.i
+
+.PHONY : src/foodWaterDetect.i
+
+# target to preprocess a source file
+src/foodWaterDetect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/foodWaterDetect.cpp.i
+.PHONY : src/foodWaterDetect.cpp.i
+
+src/foodWaterDetect.s: src/foodWaterDetect.cpp.s
+
+.PHONY : src/foodWaterDetect.s
+
+# target to generate assembly for a file
+src/foodWaterDetect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/foodWaterDetect.cpp.s
+.PHONY : src/foodWaterDetect.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -391,6 +418,9 @@ help:
 	@echo "... src/Servo.o"
 	@echo "... src/Servo.i"
 	@echo "... src/Servo.s"
+	@echo "... src/foodWaterDetect.o"
+	@echo "... src/foodWaterDetect.i"
+	@echo "... src/foodWaterDetect.s"
 .PHONY : help
 
 

@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/Pump.cpp.o"
   "CMakeFiles/main.dir/src/SR04.cpp.o"
   "CMakeFiles/main.dir/src/Servo.cpp.o"
+  "CMakeFiles/main.dir/src/foodWaterDetect.cpp.o"
   "main"
   "main.pdb"
 )

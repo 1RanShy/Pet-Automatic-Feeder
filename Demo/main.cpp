@@ -128,8 +128,9 @@ int main()
     addFood.start(); 
 	dataProcess.start(); 
 
-	dataProcess.stop();
-    addFood.stop();
+	addFood.stop();
+    dataProcess.stop();
+    
 	cout << "Main thread finished." << endl;
 
 

@@ -1,6 +1,6 @@
 #ifndef PUMP_H
 #define PUMP_H
-
+// Just a device class
 class PumpControl
 {
 public:

@@ -9,6 +9,7 @@ CMakeFiles/main.dir/main.cpp.o
  ../include/Pump.h
  ../include/SR04.h
  ../include/Servo.h
+ ../include/globalVar.h
  /home/ranshy/Desktop/RanShuai/Demo/main.cpp
 CMakeFiles/main.dir/src/AddFood.cpp.o
  ../include/AddFood.h
@@ -16,6 +17,7 @@ CMakeFiles/main.dir/src/AddFood.cpp.o
  ../include/Pump.h
  ../include/SR04.h
  ../include/Servo.h
+ ../include/foodWaterDetect.h
  ../include/globalVar.h
  /home/ranshy/Desktop/RanShuai/Demo/src/AddFood.cpp
 CMakeFiles/main.dir/src/Blue.cpp.o
@@ -39,3 +41,11 @@ CMakeFiles/main.dir/src/SR04.cpp.o
 CMakeFiles/main.dir/src/Servo.cpp.o
  /home/ranshy/Desktop/RanShuai/Demo/include/Servo.h
  /home/ranshy/Desktop/RanShuai/Demo/src/Servo.cpp
+CMakeFiles/main.dir/src/foodWaterDetect.cpp.o
+ ../include/HumanSensor.h
+ ../include/Pump.h
+ ../include/SR04.h
+ ../include/Servo.h
+ ../include/foodWaterDetect.h
+ ../include/globalVar.h
+ /home/ranshy/Desktop/RanShuai/Demo/src/foodWaterDetect.cpp

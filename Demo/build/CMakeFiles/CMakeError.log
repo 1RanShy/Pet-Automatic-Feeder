@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_755a5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_755a5.dir/build.make CMakeFiles/cmTC_755a5.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_f1e0b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f1e0b.dir/build.make CMakeFiles/cmTC_f1e0b.dir/build
 gmake[1]: Entering directory '/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_755a5.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -o CMakeFiles/cmTC_755a5.dir/src.c.o -c /home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_755a5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_755a5.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD CMakeFiles/cmTC_755a5.dir/src.c.o -o cmTC_755a5 
-/usr/bin/ld: CMakeFiles/cmTC_755a5.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_f1e0b.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -o CMakeFiles/cmTC_f1e0b.dir/src.c.o -c /home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f1e0b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1e0b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD CMakeFiles/cmTC_f1e0b.dir/src.c.o -o cmTC_f1e0b 
+/usr/bin/ld: CMakeFiles/cmTC_f1e0b.dir/src.c.o: in function `main':
 src.c:(.text+0x40): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x4c): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x58): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x68): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_755a5.dir/build.make:106: cmTC_755a5] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_f1e0b.dir/build.make:106: cmTC_f1e0b] Error 1
 gmake[1]: Leaving directory '/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:140: cmTC_755a5/fast] Error 2
+gmake: *** [Makefile:140: cmTC_f1e0b/fast] Error 2
 
 
 Source file was:
@@ -43,18 +43,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_db252/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_db252.dir/build.make CMakeFiles/cmTC_db252.dir/build
+Run Build Command(s):/usr/bin/gmake cmTC_b7faf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7faf.dir/build.make CMakeFiles/cmTC_b7faf.dir/build
 gmake[1]: Entering directory '/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_db252.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_db252.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
-Linking C executable cmTC_db252
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db252.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_db252.dir/CheckFunctionExists.c.o -o cmTC_db252  -lpthreads 
+Building C object CMakeFiles/cmTC_b7faf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_b7faf.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b7faf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7faf.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_b7faf.dir/CheckFunctionExists.c.o -o cmTC_b7faf  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_db252.dir/build.make:106: cmTC_db252] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_b7faf.dir/build.make:106: cmTC_b7faf] Error 1
 gmake[1]: Leaving directory '/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:140: cmTC_db252/fast] Error 2
+gmake: *** [Makefile:140: cmTC_b7faf/fast] Error 2
 
 
 

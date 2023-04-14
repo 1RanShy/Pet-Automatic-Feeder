@@ -1,8 +1,6 @@
 #ifndef GLOBALBAR_H
 #define GLOBALBAR_H
-#include<thread>
 #include<mutex>
-#include<iostream>
 using namespace std;
 #define TEST
 // Pin definition
