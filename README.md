@@ -21,7 +21,7 @@ So our idea is to design an automatic feeding machine, which can help people fee
 
 Next, let's introduce our fifth member Nana:
 
-![63acb227ee42f7dae16dbdc9280ce7c](https://user-images.githubusercontent.com/123122528/214158524-02986317-cb96-4dc8-90a6-3feb8eb39e0c.jpg)
+![Cat](assets/Cat.jpg)
 
 # APP development Github link
 [APP development Github link](https://github.com/Zexuan2815250/Pet-Automatic-Feeder-APP)
@@ -60,4 +60,6 @@ We use servo motors to control a series of actions in the automatic feeding syst
 
 The camera
 
-![Circuit Schematic](https://user-images.githubusercontent.com/123078993/232022880-85f9086f-bb59-4ab4-8e48-9f806b458ede.png)
+
+
+![CircuitDiagram](assets/CircuitDiagram.png)
