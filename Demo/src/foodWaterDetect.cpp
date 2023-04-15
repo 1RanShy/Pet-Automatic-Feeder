@@ -94,9 +94,9 @@ void AddFoodcallback :: addFoodWater()
     // manuuly  mode
     else
     {
-        SR04 foodDtect(foodSensorTrigger,foodSensorEcho);
+        // SR04 foodDtect(foodSensorTrigger,foodSensorEcho);
         Servo addFood(servoAddFood);
-        SR04 waterDetect(waterSensorTrigger,waterSensorEcho);
+        // SR04 waterDetect(waterSensorTrigger,waterSensorEcho);
         PumpControl pump(pumpPin);
 
         cout << "Manully add Food" << endl;
