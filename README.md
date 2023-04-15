@@ -12,12 +12,23 @@
 
 Other folders are used to store other files which are related to this project.
 
+
+
+---
+
+
+
 # The Project Introduction
 
 
 At present, pets are very common family members. But sometimes we have to go out and can't take care of them. What should we do when we are in such a rush? At this time, if there is an automatic feeding machine, it will deeply help us deal with this sad situation. 
 
 So our idea is to design an automatic feeding machine, which can help people feed pets when they are not at home
+
+
+
+---
+
 
 
 ## Functions of our fully automatic pet feeder
@@ -45,7 +56,11 @@ So our idea is to design an automatic feeding machine, which can help people fee
 		我们的机器没有实体按键,而是将所有需要的按键功能都移植到了手机上.你可以通过我们的手机应用非常方便地操作我们的机器.
 
 
+
+
 ---
+
+
 
 ## How many threads we use in  our code
 
@@ -76,11 +91,19 @@ This thread is dedicated to handling the data received via Bluetooth and sending
 这个线程专门处理蓝牙接收到的数据的,以及发送需要发送的数据.这一切功能的调用都是通过,程序内蓝牙数据的改变而触发的.
 	
 
+---
+
 
 
 ## Directory Structure
 
 I will introduce the Directory Structure of our Project here
+
+
+
+---
+
+
 
 ### Demo Directory Structure
 
@@ -106,6 +129,8 @@ Readme.md:
 	The file you are reading
 
 
+
+---
 
 
 
@@ -140,6 +165,12 @@ Requirements.md:
 	Some Problems I met when i developped the code.
 
 
+
+---
+
+
+
+
 ## The Circuit Diagram
 
 The Altium Designer project can be found in the folder Circuit_Schematic.
@@ -170,11 +201,17 @@ $$
 $$
 We can not find a resistor whose value is 1171. So we connected two 470-ohm resistors in series.
 
+
+
+---
+
+
+
 ## The materials about the device we choose
 
 
 
-
+---
 
 
 
@@ -228,17 +265,22 @@ Main Duty :
 
 ---
 
+
+
 ## The fifth team Member
 
 Next, let's introduce our fifth member Nana:
 
 ![Cat](assets/Cat.jpg)
 
+
+
+---
+
 # Mobile APP development Github link
 
 
 This is the GitHub link where our team member Lizexuan stores the mobile application. However, the code for the mobile application is also available in the zexuan branch of our repository.
-
 
 [APP development Github link](https://github.com/Zexuan2815250/Pet-Automatic-Feeder-APP)
 
