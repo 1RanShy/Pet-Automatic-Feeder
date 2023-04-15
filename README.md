@@ -345,7 +345,9 @@ Next, let's introduce our fifth member Nana:
 # Mobile APP development Github link
 
 ~~~text
-This is the GitHub link where our team member Lizexuan stores the mobile application. However, the code for the mobile application is also available in the zexuan branch of our repository.
+This is the GitHub link where our team member Lizexuan stores the mobile application. 
+However, 
+the code for the mobile application is also available in the zexuan branch of our repository.
 ~~~
 
 [APP development Github link](https://github.com/Zexuan2815250/Pet-Automatic-Feeder-APP)
