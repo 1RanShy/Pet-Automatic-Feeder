@@ -20,10 +20,19 @@ Other folders are used to store other files which are related to this project.
 
 # The Project Introduction
 
+~~~text
+At present, pets are very common family members. 
+But sometimes we have to go out and can't take care of them. 
+What should we do when we are in such a rush? 
+At this time, if there is an automatic feeding machine, it will deeply help us deal with this sad situation. 
 
-At present, pets are very common family members. But sometimes we have to go out and can't take care of them. What should we do when we are in such a rush? At this time, if there is an automatic feeding machine, it will deeply help us deal with this sad situation. 
+So our idea is to design an automatic feeding machine, 
+which can help people feed pets when they are not at home
+~~~
 
-So our idea is to design an automatic feeding machine, which can help people feed pets when they are not at home
+
+
+
 
 
 
@@ -115,8 +124,10 @@ Some callback funtions
 
 
 2. BlueSendReceive :
-   This thread is dedicated to handling the data received via Bluetooth and sending the required data. 
-   All of these functions are triggered by changes to the Bluetooth data within the program.
+   This thread is dedicated to handling the data received via Bluetooth 
+   and sending the required data. 
+   All of these functions are triggered by changes to 
+   the Bluetooth data within the program.
 
 这个线程专门处理蓝牙接收到的数据的,以及发送需要发送的数据.这一切功能的调用都是通过,程序内蓝牙数据的改变而触发的.
 	
@@ -173,6 +184,7 @@ Our Final code is stored in the folder called Demo.
 
 ![image-20230415101654472](assets/image-20230415101654472.png)
 
+~~~text
 - .vscode:
   	You can ignore this folder
 
@@ -188,7 +200,10 @@ Our Final code is stored in the folder called Demo.
   	Mainly stores some device driver class files and some Unit Test Files.
   	
 - Thread:
-  	At the beginning, we didn't fully understand what multi-threaded programming and callback functions were. Therefore, we wrote some projects in this folder to help us understand multi-threaded programming and callback functions.
+  	At the beginning, 
+  	we didn't fully understand what multi-threaded programming and callback functions were. 
+  	Therefore, we wrote some projects in this folder to 
+  	help us understand multi-threaded programming and callback functions.
   	
 - assets:
   	Some image resources
@@ -198,6 +213,7 @@ Our Final code is stored in the folder called Demo.
   	
 - Requirements.md:
   	Some Problems I met when i developped the code.
+~~~
 
 
 
