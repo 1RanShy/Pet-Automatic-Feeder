@@ -14,15 +14,15 @@ Other folders are used to store other files which are related to this project.
 
 # The Project Introduction
 
-~~~text
+
 At present, pets are very common family members. But sometimes we have to go out and can't take care of them. What should we do when we are in such a rush? At this time, if there is an automatic feeding machine, it will deeply help us deal with this sad situation. 
 
 So our idea is to design an automatic feeding machine, which can help people feed pets when they are not at home
-~~~
+
 
 ## Functions of our fully automatic pet feeder
 
-~~~text
+
 1. Automatic Feeding/Manual Feeding Function
     1. When you are away from home, you can use our mobile app to switch to automatic feeding mode. This mode will help you to feed your pet.
     2. If you are at home, you can switch to manual feeding mode using our mobile app, so you can provide your pet with a special and customized meal.
@@ -44,13 +44,13 @@ So our idea is to design an automatic feeding machine, which can help people fee
 
 3. 蓝牙操作 功能
 		我们的机器没有实体按键,而是将所有需要的按键功能都移植到了手机上.你可以通过我们的手机应用非常方便地操作我们的机器.
-~~~
+
 
 ---
 
 ## How many threads we use in  our code
 
-~~~text
+
 We totally use two threads in our C++ code. 
 2 Threads
 1 Timer
@@ -63,7 +63,7 @@ This thread is specifically designed to handle data transmitted by certain senso
   Whether the water level is low?
   Whether the food level is low?
   Whether the pet is near the machine?
-  
+
 这个线程专门用来处理一些传感器传递回的数据.
 例如:
   水是否少了?
@@ -76,7 +76,7 @@ This thread is dedicated to handling the data received via Bluetooth and sending
 
 这个线程专门处理蓝牙接收到的数据的,以及发送需要发送的数据.这一切功能的调用都是通过,程序内蓝牙数据的改变而触发的.
 	
-~~~
+
 
 
 
@@ -90,7 +90,7 @@ Our Final code is stored in the folder called Demo.
 
 ![image-20230415101126226](assets/image-20230415101126226.png)
 
-~~~text
+
 build:
 	This is the folder we store some caches which produced by cmake. The executable file will also be in this folder.
 	
@@ -109,7 +109,7 @@ Readme.md:
 	The file you are reading
 
 
-~~~
+
 
 
 
@@ -117,7 +117,7 @@ Readme.md:
 
 ![image-20230415101654472](assets/image-20230415101654472.png)
 
-~~~text
+
 .vscode:
 	You can ignore this folder
 
@@ -141,7 +141,7 @@ Readme.md:
 	
 Requirements.md:
 	Some Problems I met when i developped the code.
-~~~
+
 
 ## The Circuit Diagram
 
@@ -153,11 +153,11 @@ This circuit is very simple and there is nothing particularly noteworthy about i
 
 We use a PNP transistor as the switch to turn on/off the pump. 
 
-~~~text
+
 The main reason is:	
 
 ​	The GPIO pin of Raspberry pi can not provide the enough current to drive the pump. The current required to drive this water pump is as high as 100mA, while the maximum current that our Raspberry Pi pin can provide is only 16mA, which is far from enough to drive the water pump.
-~~~
+
 
 ---
 
@@ -183,22 +183,31 @@ We can not find a resistor whose value is 1171. So we connected two 470-ohm resi
 
 # Team member Introduction & Duty Allocation
 
-~~~text
-1. Yi Liu 
+Yi Liu 
 
 Main Duty : 
 1. Design the model for our automatic pet feeder. 
+
 2. Build the demo circuit.
+
 3. Provide advice for the code developping
 
-2. ZeXuan Li
+   
+
+   
+
+ZeXuan Li
 
 Main Duty : 
 1. Develop our mobile application
+
 2. Take part in the C++ coding
+
 3. Build the demo circuit.
 
-3. Shuai Ran
+   
+
+Shuai Ran
 
 Main Duty : 
 1. Mainly at C++ coding
@@ -206,14 +215,17 @@ Main Duty :
 3. Develop the code with full functions we need
 4. Test the Programme
 
-4. YuLong Liu
+
+
+
+YuLong Liu
 
 Main Duty : 
 1. Develop the Device deriver
 2. Build the demo circuit
 3. Test the circuit
 
-~~~
+
 
 
 
@@ -227,9 +239,9 @@ Next, let's introduce our fifth member Nana:
 
 # Mobile APP development Github link
 
-~~~text
+
 This is the GitHub link where our team member Lizexuan stores the mobile application. However, the code for the mobile application is also available in the zexuan branch of our repository.
-~~~
+
 
 [APP development Github link](https://github.com/Zexuan2815250/Pet-Automatic-Feeder-APP)
 
