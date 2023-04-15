@@ -38,10 +38,16 @@ So our idea is to design an automatic feeding machine, which can help people fee
     1. When you are away from home, you can use our mobile app to switch to automatic feeding mode. This mode will help you to feed your pet.
     2. If you are at home, you can switch to manual feeding mode using our mobile app, so you can provide your pet with a special and customized meal.
     3. If you are at home but don't want to feed your pet, you can first switch to automatic feeding mode, wait for the food to fill up, and then switch to manual feeding mode.
+
+    
+    
 2. Pet Feeding Detection Function
     This automatic pet feeder is equipped with a human sensor. When you want to know if your pet is eating or somewhere else, you can use our mobile app to check if your cat is near the automatic pet feeder. This greatly facilitates you in finding your pet.
+
+
+
 3. Bluetooth Operation Function
-    Our machine does not have physical buttons, but all the required button functions are transferred to the mobile app. You can easily operate our machine through our mobile app.
+   Our machine does not have physical buttons, but all the required button functions are transferred to the mobile app. You can easily operate our machine through our mobile app.
 
 
 
@@ -50,10 +56,16 @@ So our idea is to design an automatic feeding machine, which can help people fee
     1. 当您外出不在家时,您可以使用我们的手机应用打开自动喂食模式.此模式会帮你投喂您的宠物.
     2. 若您人在家中,则可以使用我们的手机应用切换到手动喂食模式,这样您可以为您的爱宠提供您特特制的美食.
     3. 若您人在家中,但不想去喂您的爱宠.则您可以通过先打开自动喂食模式,等食物填满再切换到手动喂食模式.
+
+    
+    
 2. 宠物进食检测 功能
 		本自动喂食器配备了人体传感器.当您想知道您的宠物是在进食还是在别的地方时.您可以通过我们的手机应用得知:猫咪是否在自动喂食器附近.这极大的方便了您寻找您的宠物
+
+
+
 3. 蓝牙操作 功能
-		我们的机器没有实体按键,而是将所有需要的按键功能都移植到了手机上.你可以通过我们的手机应用非常方便地操作我们的机器.
+   	我们的机器没有实体按键,而是将所有需要的按键功能都移植到了手机上.你可以通过我们的手机应用非常方便地操作我们的机器.
 
 
 
@@ -111,22 +123,21 @@ Our Final code is stored in the folder called Demo.
 
 ![image-20230415101126226](assets/image-20230415101126226.png)
 
-build:
-	This is the folder we store some caches which produced by cmake. The executable file will also be in this folder.
-	
-include:
-	This folder stores all the head files.
-	
-src:
-	This folder stores all the ssource files
-	
-CMakeLists.txt :
-
-main.cpp:
-	main Programme
-	
-Readme.md:
-	The file you are reading
+- build:
+  	This is the folder we store some caches which produced by cmake. The executable file will also be in this folder.
+  	
+- include:
+  	This folder stores all the head files.
+  	
+- src:
+  	This folder stores all the ssource files
+  	
+- CMakeLists.txt :
+- main.cpp:
+  	main Programme
+  	
+- Readme.md:
+  	The file you are reading
 
 
 
@@ -139,30 +150,31 @@ Readme.md:
 
 ![image-20230415101654472](assets/image-20230415101654472.png)
 
+- .vscode:
+  	You can ignore this folder
 
-.vscode:
-	You can ignore this folder
+- Circuit_Schematic:
+  	The circuit schematic PDF and Project file produced by Altium Designer are put in this folder.
 
-Circuit_Schematic:
-	The circuit schematic PDF and Project file produced by Altium Designer are put in this folder.
+- Demo:
+  	Our final code is in this folder.
 
-Demo:
-	Our final code is in this folder.
-	
-Single Device Unit Test:
-	Mainly stores some device driver class files and some Unit Test Files.
-	
-Thread:
-	At the beginning, we didn't fully understand what multi-threaded programming and callback functions were. Therefore, we wrote some projects in this folder to help us understand multi-threaded programming and callback functions.
-	
-assets:
-	Some image resources
-	
-Readme.md:
-	This file
-	
-Requirements.md:
-	Some Problems I met when i developped the code.
+​	
+
+- Single Device Unit Test:
+  	Mainly stores some device driver class files and some Unit Test Files.
+  	
+- Thread:
+  	At the beginning, we didn't fully understand what multi-threaded programming and callback functions were. Therefore, we wrote some projects in this folder to help us understand multi-threaded programming and callback functions.
+  	
+- assets:
+  	Some image resources
+  	
+- Readme.md:
+  	This file
+  	
+- Requirements.md:
+  	Some Problems I met when i developped the code.
 
 
 
