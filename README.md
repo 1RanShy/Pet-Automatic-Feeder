@@ -91,6 +91,7 @@ So our idea is to design an automatic feeding machine, which can help people fee
 
 ## How many threads we use in  our code
 
+~~~text
 We totally use two threads in our C++ code. 
 
 2 Threads
@@ -98,8 +99,9 @@ We totally use two threads in our C++ code.
 Some callback funtions
 
 2 threads Below
+
 1. AddFood :
-This thread is specifically designed to handle data transmitted by certain sensors, such as:
+   This thread is specifically designed to handle data transmitted by certain sensors, such as:
 
 ​	  Whether the water level is low?
   	Whether the food level is low?
@@ -113,10 +115,16 @@ This thread is specifically designed to handle data transmitted by certain senso
 
 
 2. BlueSendReceive :
-This thread is dedicated to handling the data received via Bluetooth and sending the required data. All of these functions are triggered by changes to the Bluetooth data within the program.
+   This thread is dedicated to handling the data received via Bluetooth and sending the required data. 
+   All of these functions are triggered by changes to the Bluetooth data within the program.
 
 这个线程专门处理蓝牙接收到的数据的,以及发送需要发送的数据.这一切功能的调用都是通过,程序内蓝牙数据的改变而触发的.
 	
+~~~
+
+
+
+
 
 ---
 
@@ -138,8 +146,10 @@ Our Final code is stored in the folder called Demo.
 
 ![image-20230415101126226](assets/image-20230415101126226.png)
 
+~~~text
 - build:
-  	This is the folder we store some caches which produced by cmake. The executable file will also be in this folder.
+  	This is the folder we store some caches which produced by cmake. 
+  	The executable file will also be in this folder.
   	
 - include:
   	This folder stores all the head files.
@@ -153,11 +163,9 @@ Our Final code is stored in the folder called Demo.
   	
 - Readme.md:
   	The file you are reading
-
-
+~~~
 
 ---
-
 
 
 
