@@ -48,8 +48,10 @@ which can help people feed pets when they are not at home
 
    1. When you are away from home, you can use our mobile app to switch to automatic feeding mode. 
    This mode will help you to feed your pet.
+   
    2. If you are at home, you can switch to manual feeding mode using our mobile app, 
    so you can provide your pet with a special and customized meal.
+   
    3. If you are at home but don't want to feed your pet, 
    you can first switch to automatic feeding mode, wait for the food to fill up, 
    and then switch to manual feeding mode.
@@ -74,9 +76,11 @@ which can help people feed pets when they are not at home
 
 1. 自动喂食/手动喂食 功能
 
-   1. 当您外出不在家时,您可以使用我们的手机应用打开自动喂食模式.此模式会帮你投喂您的宠物.
-   2. 若您人在家中,则可以使用我们的手机应用切换到手动喂食模式,这样您可以为您的爱宠提供您特特制的美食.
-   3. 若您人在家中,但不想去喂您的爱宠.则您可以通过先打开自动喂食模式,等食物填满再切换到手动喂食模式.
+  1. 当您外出不在家时,您可以使用我们的手机应用打开自动喂食模式.此模式会帮你投喂您的宠物.
+  
+  2. 若您人在家中,则可以使用我们的手机应用切换到手动喂食模式,这样您可以为您的爱宠提供您特特制的美食.
+  
+  3. 若您人在家中,但不想去喂您的爱宠.则您可以通过先打开自动喂食模式,等食物填满再切换到手动喂食模式.
 
    
 
