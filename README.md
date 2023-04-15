@@ -247,16 +247,20 @@ which is far from enough to drive the water pump.
 
 
 
-A 940 $\Omega$ resistor is put in the Base of the Transistor.
+A 940 $\Omega$ the resistor is put in the Base of the Transistor.
 
 The reason is :
 
 We have selected a transistor with a gain factor of 45.
 
 The water pump requires a current of 100mA to drive. The transistor requires a voltage of about 0.7V to turn on, and the amplification factor is 100. This means that the voltage applied to the resistor is about 2.6V, and the current is around $\frac{100}{45} = 2.22 mA$. Therefore, the resistor value is about :
+
+
 $$
 \frac{2.6}{2.22*10^{-3}} = 1171 \Omega
 $$
+
+
 We can not find a resistor whose value is 1171. So we connected two 470-ohm resistors in series.
 
 
