@@ -190,7 +190,8 @@ Our Final code is stored in the folder called Demo.
   	You can ignore this folder
 
 - Circuit_Schematic:
-  	The circuit schematic PDF and Project file produced by Altium Designer are put in this folder.
+  	The circuit schematic PDF and Project file produced by Altium Designer are put 
+  	in this folder.
 
 - Demo:
   	Our final code is in this folder.
@@ -229,17 +230,22 @@ The Altium Designer project can be found in the folder Circuit_Schematic.
 
 ![CircuitDiagram](assets/CircuitDiagram.png)
 
-This circuit is very simple and there is nothing particularly noteworthy about it, except for the circuit of the water pump.
+~~~text
+This circuit is very simple and there is nothing particularly noteworthy about it, 
+except for the circuit of the water pump.
 
 We use a PNP transistor as the switch to turn on/off the pump. 
 
 
 The main reason is:	
 
-​	The GPIO pin of Raspberry pi can not provide the enough current to drive the pump. The current required to drive this water pump is as high as 100mA, while the maximum current that our Raspberry Pi pin can provide is only 16mA, which is far from enough to drive the water pump.
+​	The GPIO pin of Raspberry pi can not provide the enough current to drive the pump. 
+The current required to drive this water pump is as high as 100mA, 
+while the maximum current that our Raspberry Pi pin can provide is only 16mA, 
+which is far from enough to drive the water pump.
+~~~
 
 
----
 
 A 940 $\Omega$ resistor is put in the Base of the Transistor.
 
@@ -269,9 +275,11 @@ We can not find a resistor whose value is 1171. So we connected two 470-ohm resi
 
 # Team member Introduction & Duty Allocation
 
+~~~text
 Yi Liu 
 
 Main Duty : 
+
 1. Design the model for our automatic pet feeder. 
 
 2. Build the demo circuit.
@@ -285,6 +293,7 @@ Main Duty :
 ZeXuan Li
 
 Main Duty : 
+
 1. Develop our mobile application
 
 2. Take part in the C++ coding
@@ -296,6 +305,7 @@ Main Duty :
 Shuai Ran
 
 Main Duty : 
+
 1. Mainly at C++ coding
 2. Develop Device Unit test
 3. Develop the code with full functions we need
@@ -303,15 +313,14 @@ Main Duty :
 
 
 
-
 YuLong Liu
 
 Main Duty : 
+
 1. Develop the Device deriver
 2. Build the demo circuit
 3. Test the circuit
-
-
+~~~
 
 
 
@@ -331,8 +340,9 @@ Next, let's introduce our fifth member Nana:
 
 # Mobile APP development Github link
 
-
+~~~text
 This is the GitHub link where our team member Lizexuan stores the mobile application. However, the code for the mobile application is also available in the zexuan branch of our repository.
+~~~
 
 [APP development Github link](https://github.com/Zexuan2815250/Pet-Automatic-Feeder-APP)
 
