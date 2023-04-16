@@ -13,10 +13,12 @@ using namespace std;
 #define pumpPin 12
 
 //define status of food and water
-#define foodFull 4
-#define foodEmpty 10
-#define waterFull 4
-#define waterEmpty 10
+//Adjust with your Demo model machine
+#define foodFull 16.0
+#define foodEmpty 17.0
+
+#define waterFull 16.0
+#define waterEmpty 17.0
 
 extern mutex datsToSendLock;
 

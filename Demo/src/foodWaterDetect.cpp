@@ -29,15 +29,19 @@ void AddFoodcallback :: addFoodWater()
         
         float foodLeft = foodDtect.get_distance();
         cout << foodLeft << "cm" << endl;
-        if(foodLeft < foodFull)//only change here
-        {
-            addFood.setAngle(0);
-            //food is full ,stop adding food
-        }
+        // if(foodLeft < foodFull)//only change here
+        // {
+        //     addFood.setAngle(0);
+        //     //food is full ,stop adding food
+        // }
         if(foodLeft > foodEmpty)
         {
             addFood.setAngle(180);
             //food is empty, add food
+        }
+        else
+        {
+            addFood.setAngle(0);
         }
 
 
@@ -94,9 +98,9 @@ void AddFoodcallback :: addFoodWater()
     // manuuly  mode
     else
     {
-        SR04 foodDtect(foodSensorTrigger,foodSensorEcho);
+        // SR04 foodDtect(foodSensorTrigger,foodSensorEcho);
         Servo addFood(servoAddFood);
-        SR04 waterDetect(waterSensorTrigger,waterSensorEcho);
+        // SR04 waterDetect(waterSensorTrigger,waterSensorEcho);
         PumpControl pump(pumpPin);
 
         cout << "Manully add Food" << endl;
