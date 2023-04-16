@@ -6,6 +6,10 @@
 
 ```text
                     Pet Automatic Feeder based on Raspberry Pi 
+                    
+ Our real-time Embeded system code is fully developped in C++.
+ Although github say that C++ only counts 25% in our project.
+ I believe this is due to other files.
 ```
 
 # Our final code for the automatic pet feeder is stored in the Demo folder.
