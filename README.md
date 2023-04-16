@@ -357,12 +357,6 @@ Here I will introduce How to use our Mobile App
 
 
 
-
-
-
-
-
-
 ## <u>*Mobile APP development Github link*</u>
 
 ~~~text
@@ -398,16 +392,18 @@ the water pump is first turned off.
 
 ~~~text
 - Automatic Feed Machine Model
-Our automatic feeder model was too small, 
-which meant we couldn't put a lot of food and water in it, 
-so we couldn't demonstrate it very well.
+
+  Our automatic feeder model was too small, 
+  which meant we couldn't put a lot of food and water in it, 
+  so we couldn't demonstrate it very well.
 
 
 
 - Siphoning
-When building the automatic feeding machine model, 
-we were sucking water from a higher level surface to a lower level surface. 
-However, the water flow continued to flow downwards instead of stopping as we expected. 
-It was only through repeated testing that we discovered the occurrence of siphoning.
+
+  When building the automatic feeding machine model, 
+  we were sucking water from a higher level surface to a lower level surface. 
+  However, the water flow continued to flow downwards instead of stopping as we expected. 
+  It was only through repeated testing that we discovered the occurrence of siphoning.
 ~~~
 
