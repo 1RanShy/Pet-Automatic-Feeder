@@ -18,6 +18,12 @@ Other folders are used to store other files which are related to this project.
 
 
 
+# The social Media Link
+
+Please watch our demostration vedio here: [The Automatic Feed Machine Principle Demonstration](https://www.instagram.com/reel/Cq_lPYHAqUB/?utm_source=ig_web_button_share_sheet)
+
+---
+
 # The Project Introduction
 
 ~~~text
@@ -33,15 +39,11 @@ which can help people feed pets when they are not at home
 
 
 
-
-
-
-
 ---
 
 
 
-# Functions of our fully automatic pet feeder
+## Functions of our fully automatic pet feeder
 
 ~~~text
 1. Automatic Feeding/Manual Feeding Function
@@ -103,7 +105,7 @@ which can help people feed pets when they are not at home
 
 
 
-# How many threads we use in  our code
+## How many threads we use in  our code
 
 ~~~text
 We totally use two threads in our C++ code. 
@@ -144,7 +146,56 @@ Some callback funtions
 
 ---
 
+# The Circuit Diagram
 
+The Altium Designer project can be found in the folder Circuit_Schematic.
+
+![CircuitDiagram](assets/CircuitDiagram.png)
+
+~~~text
+This circuit is very simple and there is nothing particularly noteworthy about it, 
+except for the circuit of the water pump.
+
+We use a PNP transistor as the switch to turn on/off the pump. 
+
+
+The main reason is:	
+
+​	The GPIO pin of Raspberry pi can not provide the enough current to drive the pump. 
+The current required to drive this water pump is as high as 100mA, 
+while the maximum current that our Raspberry Pi pin can provide is only 16mA, 
+which is far from enough to drive the water pump.
+~~~
+
+
+
+A 940 $\Omega$ the resistor is put in the Base of the Transistor.
+
+The reason is :
+
+We have selected a transistor with a gain factor of 45.
+
+The water pump requires a current of 100mA to drive. The transistor requires a voltage of about 0.7V to turn on, and the amplification factor is 100. This means that the voltage applied to the resistor is about 2.6V, and the current is around $\frac{100}{45} = 2.22 mA$. Therefore, the resistor value is about :
+
+
+$$
+\frac{2.6}{2.22*10^{-3}} = 1171 \Omega
+$$
+
+
+We can not find a resistor whose value is 1171. So we connected two 470-ohm resistors in series.
+
+
+
+---
+
+
+
+## The materials about the device we choose
+
+
+
+---
 
 # Directory Structure
 
@@ -227,53 +278,6 @@ Our Final code is stored in the folder called Demo.
 
 
 
-# The Circuit Diagram
-
-The Altium Designer project can be found in the folder Circuit_Schematic.
-
-![CircuitDiagram](assets/CircuitDiagram.png)
-
-~~~text
-This circuit is very simple and there is nothing particularly noteworthy about it, 
-except for the circuit of the water pump.
-
-We use a PNP transistor as the switch to turn on/off the pump. 
-
-
-The main reason is:	
-
-​	The GPIO pin of Raspberry pi can not provide the enough current to drive the pump. 
-The current required to drive this water pump is as high as 100mA, 
-while the maximum current that our Raspberry Pi pin can provide is only 16mA, 
-which is far from enough to drive the water pump.
-~~~
-
-
-
-A 940 $\Omega$ the resistor is put in the Base of the Transistor.
-
-The reason is :
-
-We have selected a transistor with a gain factor of 45.
-
-The water pump requires a current of 100mA to drive. The transistor requires a voltage of about 0.7V to turn on, and the amplification factor is 100. This means that the voltage applied to the resistor is about 2.6V, and the current is around $\frac{100}{45} = 2.22 mA$. Therefore, the resistor value is about :
-
-
-$$
-\frac{2.6}{2.22*10^{-3}} = 1171 \Omega
-$$
-
-
-We can not find a resistor whose value is 1171. So we connected two 470-ohm resistors in series.
-
-
-
----
-
-
-
-## The materials about the device we choose
-
 
 
 ---
@@ -345,23 +349,29 @@ Next, let's introduce our fifth member Nana:
 
 ---
 
-# <u>*Mobile APP development Github link*</u>
+# Mobile Application
 
 ~~~text
-This is the GitHub link where our team member Lizexuan stores the mobile application. 
-However, 
-the code for the mobile application is also available in the zexuan branch of our repository.
+Here I will introduce How to use our Mobile App
 ~~~
 
-[APP development Github link](https://github.com/Zexuan2815250/Pet-Automatic-Feeder-APP)
 
 
 
 
 
-# The social Media Link
 
-[The Automatic Feed Machine Principle Demonstration](https://www.instagram.com/reel/Cq_lPYHAqUB/?utm_source=ig_web_button_share_sheet)
+
+
+## <u>*Mobile APP development Github link*</u>
+
+~~~text
+The code for the mobile application is also available in the zexuan branch of our repository.
+~~~
+
+
+
+
 
 
 
