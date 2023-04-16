@@ -13,6 +13,7 @@ using namespace std;
 #define pumpPin 12
 
 //define status of food and water
+//Adjust with your Demo model machine
 #define foodFull 16.0
 #define foodEmpty 17.0
 
