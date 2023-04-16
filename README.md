@@ -363,6 +363,12 @@ Here I will introduce How to use our Mobile App
 The code for the mobile application is also available in the zexuan branch of our repository.
 ~~~
 
+## The demonstration of The mobile Application
+
+<img src="assets/Screenshot_20230416_223857_com.rtep.petfeeder.jpg" alt="Screenshot_20230416_223857_com.rtep.petfeeder" style="zoom:33%;" />
+
+<img src="assets/Screenshot_20230416_223850_com.rtep.petfeeder.jpg" alt="Screenshot_20230416_223850_com.rtep.petfeeder" style="zoom:33%;" />
+
 
 
 
