@@ -40,8 +40,8 @@ and the default form of the serialWrite function parameters is to pass a variabl
 char dataToSend[5] = {'H','E','L','L','O'};
 char dataReceived[5] = {'H','E','L','L','O'};
 
-bool autoAddFoodFlag = true; //Auto Feeder Identifier 1: autoAddFood 0: manually addFood
-bool findCatFlag = true; //1: Find cat 0: do not need to find cat
+bool autoAddFoodFlag = false; //Auto Feeder Identifier 1: autoAddFood 0: manually addFood
+bool findCatFlag = false; //1: Find cat 0: do not need to find cat
 
 
 struct MyBlueToothcallback : BlueToothcallback {

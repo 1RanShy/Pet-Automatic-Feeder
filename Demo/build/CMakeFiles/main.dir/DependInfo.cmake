@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ranshy/Desktop/RanShuai/Demo/main.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/main.cpp.o"
-  "/home/ranshy/Desktop/RanShuai/Demo/src/AddFood.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/AddFood.cpp.o"
-  "/home/ranshy/Desktop/RanShuai/Demo/src/Blue.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/Blue.cpp.o"
-  "/home/ranshy/Desktop/RanShuai/Demo/src/BlueSendReceive.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/BlueSendReceive.cpp.o"
-  "/home/ranshy/Desktop/RanShuai/Demo/src/HumanSensor.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/HumanSensor.cpp.o"
-  "/home/ranshy/Desktop/RanShuai/Demo/src/Pump.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/Pump.cpp.o"
-  "/home/ranshy/Desktop/RanShuai/Demo/src/SR04.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/SR04.cpp.o"
-  "/home/ranshy/Desktop/RanShuai/Demo/src/Servo.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/Servo.cpp.o"
-  "/home/ranshy/Desktop/RanShuai/Demo/src/foodWaterDetect.cpp" "/home/ranshy/Desktop/RanShuai/Demo/build/CMakeFiles/main.dir/src/foodWaterDetect.cpp.o"
+  "/home/ranshy/Desktop/main/Demo/main.cpp" "/home/ranshy/Desktop/main/Demo/build/CMakeFiles/main.dir/main.cpp.o"
+  "/home/ranshy/Desktop/main/Demo/src/AddFood.cpp" "/home/ranshy/Desktop/main/Demo/build/CMakeFiles/main.dir/src/AddFood.cpp.o"
+  "/home/ranshy/Desktop/main/Demo/src/Blue.cpp" "/home/ranshy/Desktop/main/Demo/build/CMakeFiles/main.dir/src/Blue.cpp.o"
+  "/home/ranshy/Desktop/main/Demo/src/BlueSendReceive.cpp" "/home/ranshy/Desktop/main/Demo/build/CMakeFiles/main.dir/src/BlueSendReceive.cpp.o"
+  "/home/ranshy/Desktop/main/Demo/src/HumanSensor.cpp" "/home/ranshy/Desktop/main/Demo/build/CMakeFiles/main.dir/src/HumanSensor.cpp.o"
+  "/home/ranshy/Desktop/main/Demo/src/Pump.cpp" "/home/ranshy/Desktop/main/Demo/build/CMakeFiles/main.dir/src/Pump.cpp.o"
+  "/home/ranshy/Desktop/main/Demo/src/SR04.cpp" "/home/ranshy/Desktop/main/Demo/build/CMakeFiles/main.dir/src/SR04.cpp.o"
+  "/home/ranshy/Desktop/main/Demo/src/Servo.cpp" "/home/ranshy/Desktop/main/Demo/build/CMakeFiles/main.dir/src/Servo.cpp.o"
+  "/home/ranshy/Desktop/main/Demo/src/foodWaterDetect.cpp" "/home/ranshy/Desktop/main/Demo/build/CMakeFiles/main.dir/src/foodWaterDetect.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

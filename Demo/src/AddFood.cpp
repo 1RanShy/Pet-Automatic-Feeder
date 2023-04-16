@@ -23,7 +23,7 @@ using namespace std;
 */
 void AddFood::scanFoodWater() {
     running = true;
-	gpioSetTimerFunc(0, 1000, AddFoodcallback::addFoodWater);//1s callback timer
+	gpioSetTimerFunc(0, 800, AddFoodcallback::addFoodWater);//1s callback timer
     while (running) //while(1)
     {
 
