@@ -34,7 +34,7 @@ At this time, if there is an automatic feeding machine,
 it will deeply help us deal with this sad situation. 
 
 So our idea is to design an automatic feeding machine, 
-which can help people feed pets when they are not at home
+which can help people feed pets when they are not at home.
 ~~~
 
 
@@ -367,11 +367,34 @@ The code for the mobile application is also available in the zexuan branch of ou
 
 <img src="assets/Screenshot_20230416_223857_com.rtep.petfeeder.jpg" alt="Screenshot_20230416_223857_com.rtep.petfeeder" style="zoom:33%;" />
 
+~~~text
+1. Tap our device name(RanShuai)
+2. And the phone will connect to our Automatic Feed machine Bluretooh
+3. Then the second page will pop up
+~~~
+
+
+
 <img src="assets/Screenshot_20230416_223850_com.rtep.petfeeder.jpg" alt="Screenshot_20230416_223850_com.rtep.petfeeder" style="zoom:33%;" />
 
+~~~text
+The top bar will display the Bluetooth connection status.
+~~~
 
+![image-20230416224648550](assets/image-20230416224648550.png)
 
+~~~text
+This button is used to switch between auto and mannualy fill food mode.
+If you are at home, you may want to fill food for your pets by your own.
+~~~
 
+![image-20230416224814165](assets/image-20230416224814165.png)
+
+~~~text
+When the machine is in mannually, you can tap this button.
+If you cat is eating, the app will show the mesaage: The cat is enjoying its food.
+If you cat is not eating, the app will show the mesaage: The cat is not here.
+~~~
 
 
 
