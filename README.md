@@ -45,6 +45,9 @@
 	
 - The problem we met
 	1. Some problem we met and how we figured out it.
+	
+- The release version
+	You can just install the appliation here
 ~~~
 
 
@@ -457,9 +460,10 @@ YuLong Liu
 
 Main Duty : 
 
-1. Develop the Device deriver
+1. Develop the Device driver
 2. Build the demo circuit
 3. Test the circuit
+4. Develop some head files
 ~~~
 
 
@@ -565,3 +569,8 @@ the water pump is first turned off.
   It was only through repeated testing that we discovered the occurrence of siphoning.
 ~~~
 
+# The release version
+
+![image-20230417145359065](assets/image-20230417145359065.png)
+
+You can install the application here directly.
