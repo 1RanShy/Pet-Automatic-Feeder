@@ -5,22 +5,68 @@
 ![Glasgow Embeded System](assets/image-20230414233217196.png)
 
 ```text
-                    Pet Automatic Feeder based on Raspberry Pi 
+                    Pet Automatic Feeder based on Raspberry Pi 3/4
+---------------------------------------                    
+ Our real-time Embedded system code is fully developed in C++.
+ Although Github says that C++ only counts for 25% of our project.
+ I believe this is due to other files.
+ ---------------------------------------
+ Our motto is, "If we can't make the best product, we can make the cheapest product."
 ```
+
+
+
+~~~text
+                      Document Overview
+- Our final code for the automatic pet feeder is stored in the Demo folder
+	Nothing
+
+- The Social Media Link
+	1. The link to our instagram
+
+- The project Introduction:
+	1. The functions the auto feed machine has
+	2. The Threads we use and introduction for them
+	
+- The circuit diagram / Hardware
+	1. Altium Design Shematic
+	2. Some principle to choose the device
+	3. The purchase link and introduction for devices we choose
+	
+- Directory Structure
+	1. Introduction the Structure of the The Demo folder
+	2. Introduction of the repository directory
+	
+- Team member introduction & Task allocation
+
+-	Mobile App
+	1. The pics of our mobile application
+	2. How to use our mobile application
+	
+- The problem we met
+	1. Some problem we met and how we figured out it.
+	
+- The release version
+	You can just install the appliation here
+~~~
+
+
+
+
+
+
 
 # Our final code for the automatic pet feeder is stored in the Demo folder.
 
 Other folders are used to store other files which are related to this project.
 
-
-
 ---
 
 
 
-# The social Media Link
+# The Social Media Link
 
-Please watch our demostration vedio here: [The Automatic Feed Machine Principle Demonstration](https://www.instagram.com/reel/Cq_lPYHAqUB/?utm_source=ig_web_button_share_sheet)
+Please watch our demonstration video here: [Prototype of the Principle of  Automatic Feed Machine Principle](https://www.instagram.com/reel/Cq_lPYHAqUB/?utm_source=ig_web_button_share_sheet)
 
 ---
 
@@ -191,7 +237,93 @@ We can not find a resistor whose value is 1171. So we connected two 470-ohm resi
 
 
 
-## The materials about the device we choose
+## Component Purchase Links and Intriduction
+
+~~~text
+The device we used in our project:
+1 Servo Engine
+2 Ultrasonic distance sensor: HC_SR04
+1 Bluetooth Chip: HC06
+1 Pump
+1 PNP transistor : TIP126
+~~~
+
+
+
+[Servo Purchase link](https://thepihut.com/search?q=Servo&narrow_by=&sort_by=relevency&page=1)
+
+<img src="assets/image-20230417100844787.png" alt="image-20230417100844787" style="zoom:25%;" />
+
+~~~text
+- Servo
+
+Cost: 4 pounds each
+
+The servo is used to drive our wooden board to rotate 
+to fill food, thus completing the event of adding food.
+~~~
+
+[HC SR04 Purchase Link ](https://thepihut.com/products/ultrasonic-distance-sensor-hcsr04)
+
+<img src="assets/image-20230417101510466.png" alt="image-20230417101510466" style="zoom: 33%;" />
+
+~~~text
+- HC SR04
+
+Cost: 2 pounds Each
+
+This device is used to detect the distance.
+Use the ultrasonic sensor to detect the distance between the device and the food. 
+If the distance is too far, 
+it indicates that the food is empty and needs to be refilled.
+~~~
+
+
+
+[HC06 Purchase Link](https://thepihut.com/search?q=HC&narrow_by=&sort_by=relevency&page=1)
+
+<img src="assets/image-20230417101753978.png" alt="image-20230417101753978" style="zoom:33%;" />
+
+~~~text
+- HC06
+
+Cost: 5pounds each
+
+This is a chip that uses transparent transmission protocol. 
+Our phone sends and receives messages from the Raspberry Pi through this chip.
+
+This chip uses the BLE transparent transmission protocol, so it is very easy to use. 
+Its application scenarios are also very wide: 3.3-5V.
+
+We know raspberry pi has its own bluetooh. But we still choose this chip, because:
+Due to the low standby power consumption of this chip (a few microamps), 
+using this chip makes our project highly portable. 
+If someone wants to implement our project using microcontrollers 
+(such as STM32, PIC, Arduino) that do not have a built-in Bluetooth chip, 
+they can achieve Bluetooth transmission by simply connecting an HC06 chip.
+~~~
+
+[Pump Purchase Link](https://thepihut.com/products/submersible-3v-dc-water-pump-vertical-type?variant=39817422569667)
+
+<img src="assets/image-20230417102718273.png" alt="image-20230417102718273" style="zoom:50%;" />
+
+~~~text
+- Pump
+
+Cost: 2.9 pounds Each
+
+This Device is used to suck the water.
+~~~
+
+
+
+~~~text
+TIP126
+
+To use as the switch.
+
+Povide the string current that the raspberry can not provide.
+~~~
 
 
 
@@ -328,9 +460,10 @@ YuLong Liu
 
 Main Duty : 
 
-1. Develop the Device deriver
+1. Develop the Device driver
 2. Build the demo circuit
 3. Test the circuit
+4. Develop some head files
 ~~~
 
 
@@ -436,3 +569,8 @@ the water pump is first turned off.
   It was only through repeated testing that we discovered the occurrence of siphoning.
 ~~~
 
+# The release version
+
+![image-20230417145359065](assets/image-20230417145359065.png)
+
+You can install the application here directly.
