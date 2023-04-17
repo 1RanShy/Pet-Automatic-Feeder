@@ -1,4 +1,4 @@
-# Install script for directory: /home/ranshy/Desktop/main/Demo
+# Install script for directory: /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ranshy/Desktop/main/Demo/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

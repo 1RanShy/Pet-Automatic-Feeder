@@ -10,7 +10,7 @@ CMakeFiles/main.dir/main.cpp.o
  ../include/SR04.h
  ../include/Servo.h
  ../include/globalVar.h
- /home/ranshy/Desktop/main/Demo/main.cpp
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/main.cpp
 CMakeFiles/main.dir/src/AddFood.cpp.o
  ../include/AddFood.h
  ../include/HumanSensor.h
@@ -19,28 +19,28 @@ CMakeFiles/main.dir/src/AddFood.cpp.o
  ../include/Servo.h
  ../include/foodWaterDetect.h
  ../include/globalVar.h
- /home/ranshy/Desktop/main/Demo/src/AddFood.cpp
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/src/AddFood.cpp
 CMakeFiles/main.dir/src/Blue.cpp.o
  ../include/Blue.h
  ../include/globalVar.h
- /home/ranshy/Desktop/main/Demo/src/Blue.cpp
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/src/Blue.cpp
 CMakeFiles/main.dir/src/BlueSendReceive.cpp.o
  ../include/Blue.h
  ../include/BlueSendReceive.h
  ../include/globalVar.h
- /home/ranshy/Desktop/main/Demo/src/BlueSendReceive.cpp
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/src/BlueSendReceive.cpp
 CMakeFiles/main.dir/src/HumanSensor.cpp.o
  ../include/HumanSensor.h
- /home/ranshy/Desktop/main/Demo/src/HumanSensor.cpp
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/src/HumanSensor.cpp
 CMakeFiles/main.dir/src/Pump.cpp.o
  ../include/Pump.h
- /home/ranshy/Desktop/main/Demo/src/Pump.cpp
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/src/Pump.cpp
 CMakeFiles/main.dir/src/SR04.cpp.o
  ../include/SR04.h
- /home/ranshy/Desktop/main/Demo/src/SR04.cpp
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/src/SR04.cpp
 CMakeFiles/main.dir/src/Servo.cpp.o
- /home/ranshy/Desktop/main/Demo/include/Servo.h
- /home/ranshy/Desktop/main/Demo/src/Servo.cpp
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/include/Servo.h
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/src/Servo.cpp
 CMakeFiles/main.dir/src/foodWaterDetect.cpp.o
  ../include/HumanSensor.h
  ../include/Pump.h
@@ -48,4 +48,4 @@ CMakeFiles/main.dir/src/foodWaterDetect.cpp.o
  ../include/Servo.h
  ../include/foodWaterDetect.h
  ../include/globalVar.h
- /home/ranshy/Desktop/main/Demo/src/foodWaterDetect.cpp
+ /home/ranshy/Desktop/Pet-Automatic-Feeder/Demo/src/foodWaterDetect.cpp

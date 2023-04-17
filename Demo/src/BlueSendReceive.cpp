@@ -48,6 +48,7 @@ void BLEDataProcessing::DataProcessing() {
 	    }
 
 		if (dataReceived[0] != 'Z' && dataReceived[4] != 'Z') //Only when the 0th and 4th bits of the data are not Z, it indicates that this is valid data, and I will process this data.
+		{
 			for(auto blue: bluetoothCallbacks) 
 			{
 				blue->dataProcess();
