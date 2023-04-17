@@ -14,8 +14,8 @@ using namespace std;
 
 //define status of food and water
 //Adjust with your Demo model machine
-#define foodFull 16.0
-#define foodEmpty 17.0
+// #define foodFull 16.0
+#define foodEmpty 17.3
 
 #define waterFull 16.0
 #define waterEmpty 17.0
