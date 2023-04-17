@@ -18,12 +18,12 @@ using namespace std;
 */
 /*
 	Automatically detect whether the food has decreased, and if so, refill the food
-	Detect frequency : 1 time/s
+	Detect frequency : 0.8 time/s
 	The timer will call this function.
 */
 void AddFood::scanFoodWater() {
     running = true;
-	gpioSetTimerFunc(0, 800, AddFoodcallback::addFoodWater);//1s callback timer
+	gpioSetTimerFunc(0, 800, AddFoodcallback::addFoodWater);//0.8s callback timer
     while (running) //while(1)
     {
 

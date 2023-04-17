@@ -66,7 +66,13 @@ Other folders are used to store other files which are related to this project.
 
 # The Social Media Link
 
-Please watch our demonstration video here: [Prototype of the Principle of  Automatic Feed Machine Principle](https://www.instagram.com/reel/Cq_lPYHAqUB/?utm_source=ig_web_button_share_sheet)
+Please watch our demonstration video here: [Instagram : Prototype of the Principle of  Automatic Feed Machine Principle](https://www.instagram.com/reel/Cq_lPYHAqUB/?utm_source=ig_web_button_share_sheet)
+
+Please watch our demonstration video here: [Youtube : Prototype of the Principle of  Automatic Feed Machine Principle](https://www.youtube.com/channel/UCrGr79lP6F9kKG0yjQeos-Q)
+
+You can find more information about our project if you scan the QR code below.
+
+<img src="assets/theshy1011_qr.png" alt="theshy1011_qr" style="zoom:25%;" />
 
 ---
 
@@ -574,3 +580,15 @@ the water pump is first turned off.
 ![image-20230417145359065](assets/image-20230417145359065.png)
 
 You can install the application here directly.
+
+
+
+# Areas for improvement
+
+~~~text
+The ultrasonic sensor is not very accurate in measuring food levels as the food is not a flat surface. 
+This can cause measurement errors and inaccurate readings.
+The demo model is too small and does not fully showcase the functionality of our product.
+A weight sensor could be installed to enable precise feeding of a specific amount of food.
+~~~
+
