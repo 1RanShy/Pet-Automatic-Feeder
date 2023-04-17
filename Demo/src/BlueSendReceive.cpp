@@ -25,7 +25,7 @@ void BLEDataProcessing::DataProcessing() {
 	Blue ble;
     while (running) //while(1)
     {
-        if (dataToSend[4] != 'R')  //这个只是处理字符串的回调函数,如果我想我还可以设置 处理其他任务的回调函数
+        if (dataToSend[4] != 'R')  //As long as the fifth character of the string is not 'R', I will send this string.
 	    {
 			cout << "------------------------" <<endl;
             for(auto blue: bluetoothCallbacks) {
@@ -39,7 +39,7 @@ void BLEDataProcessing::DataProcessing() {
 	But I have defined that the Bluetooth data is an array of 5 digits. 
 	Therefore, I will not change this code.
 */
-        if (serDataAvailable(ble.getStatus()) == 5) //这个只是处理字符串的回调函数,如果我想我还可以设置 处理其他任务的回调函数
+        if (serDataAvailable(ble.getStatus()) == 5) //I only read the data when there are 5 data in the buffer.
 	    {
 			// cout << "come" <<endl;
 			for(auto blue: bluetoothCallbacks) {
@@ -47,8 +47,7 @@ void BLEDataProcessing::DataProcessing() {
 			}            
 	    }
 
-		if (dataReceived[0] != 'Z' && dataReceived[4] != 'Z') //这个只是处理字符串的回调函数,如果我想我还可以设置 处理其他任务的回调函数
-	    {
+		if (dataReceived[0] != 'Z' && dataReceived[4] != 'Z') //Only when the 0th and 4th bits of the data are not Z, it indicates that this is valid data, and I will process this data.
 			for(auto blue: bluetoothCallbacks) 
 			{
 				blue->dataProcess();
