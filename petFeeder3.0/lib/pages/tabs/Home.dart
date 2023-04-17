@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
     return Column(
       children: [
         MenuCard(),
-        FoodIntakeCard(),
+        // FoodIntakeCard(),
         RecommendedReading(),
       ],
     );
@@ -176,7 +176,7 @@ class RecommendedReading extends StatelessWidget{
       margin: EdgeInsets.fromLTRB(10, 0, 10, 10),
       padding: EdgeInsets.fromLTRB(0, 25, 0, 25),
       // color: Colors.white,
-      height: 310,
+      height: 520,
       width: MediaQuery.of(context).size.width,
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(10)),
